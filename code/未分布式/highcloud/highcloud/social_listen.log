@@ -1,0 +1,392 @@
+Wed, 11 Oct 2017 19:44:22 remote_connection.py[line:478] DEBUG POST http://127.0.0.1:58044/session {"capabilities": {"alwaysMatch": {"browserName": "chrome"}, "firstMatch": [{}]}, "desiredCapabilities": {"platform": "ANY", "browserName": "chrome", "version": "", "chromeOptions": {"args": [], "extensions": []}}}
+Wed, 11 Oct 2017 19:44:24 remote_connection.py[line:565] DEBUG Finished Request
+Wed, 11 Oct 2017 19:44:24 remote_connection.py[line:478] DEBUG POST http://127.0.0.1:58044/session/958e4501ba39000b8ea9c3562f39037b/url {"url": "https://twitter.com/login", "sessionId": "958e4501ba39000b8ea9c3562f39037b"}
+Wed, 11 Oct 2017 19:44:29 remote_connection.py[line:565] DEBUG Finished Request
+Wed, 11 Oct 2017 19:44:30 remote_connection.py[line:478] DEBUG POST http://127.0.0.1:58044/session/958e4501ba39000b8ea9c3562f39037b/element {"using": "css selector", "sessionId": "958e4501ba39000b8ea9c3562f39037b", "value": ".js-username-field.email-input.js-initial-focus"}
+Wed, 11 Oct 2017 19:44:30 remote_connection.py[line:565] DEBUG Finished Request
+Wed, 11 Oct 2017 19:44:30 remote_connection.py[line:478] DEBUG POST http://127.0.0.1:58044/session/958e4501ba39000b8ea9c3562f39037b/element/0.2534844983375093-1/clear {"sessionId": "958e4501ba39000b8ea9c3562f39037b", "id": "0.2534844983375093-1"}
+Wed, 11 Oct 2017 19:44:30 remote_connection.py[line:565] DEBUG Finished Request
+Wed, 11 Oct 2017 19:44:30 remote_connection.py[line:478] DEBUG POST http://127.0.0.1:58044/session/958e4501ba39000b8ea9c3562f39037b/element/0.2534844983375093-1/value {"text": "Azucena.skeen0@yahoo.com", "sessionId": "958e4501ba39000b8ea9c3562f39037b", "id": "0.2534844983375093-1", "value": ["A", "z", "u", "c", "e", "n", "a", ".", "s", "k", "e", "e", "n", "0", "@", "y", "a", "h", "o", "o", ".", "c", "o", "m"]}
+Wed, 11 Oct 2017 19:44:30 remote_connection.py[line:565] DEBUG Finished Request
+Wed, 11 Oct 2017 19:44:30 remote_connection.py[line:478] DEBUG POST http://127.0.0.1:58044/session/958e4501ba39000b8ea9c3562f39037b/element {"using": "css selector", "sessionId": "958e4501ba39000b8ea9c3562f39037b", "value": ".js-password-field"}
+Wed, 11 Oct 2017 19:44:30 remote_connection.py[line:565] DEBUG Finished Request
+Wed, 11 Oct 2017 19:44:30 remote_connection.py[line:478] DEBUG POST http://127.0.0.1:58044/session/958e4501ba39000b8ea9c3562f39037b/element/0.2534844983375093-2/clear {"sessionId": "958e4501ba39000b8ea9c3562f39037b", "id": "0.2534844983375093-2"}
+Wed, 11 Oct 2017 19:44:30 remote_connection.py[line:565] DEBUG Finished Request
+Wed, 11 Oct 2017 19:44:30 remote_connection.py[line:478] DEBUG POST http://127.0.0.1:58044/session/958e4501ba39000b8ea9c3562f39037b/element/0.2534844983375093-2/value {"text": "FwlLK4O7", "sessionId": "958e4501ba39000b8ea9c3562f39037b", "id": "0.2534844983375093-2", "value": ["F", "w", "l", "L", "K", "4", "O", "7"]}
+Wed, 11 Oct 2017 19:44:30 remote_connection.py[line:565] DEBUG Finished Request
+Wed, 11 Oct 2017 19:44:30 remote_connection.py[line:478] DEBUG POST http://127.0.0.1:58044/session/958e4501ba39000b8ea9c3562f39037b/element {"using": "css selector", "sessionId": "958e4501ba39000b8ea9c3562f39037b", "value": ".submit.EdgeButton.EdgeButton--primary.EdgeButtom--medium"}
+Wed, 11 Oct 2017 19:44:30 remote_connection.py[line:565] DEBUG Finished Request
+Wed, 11 Oct 2017 19:44:30 remote_connection.py[line:478] DEBUG POST http://127.0.0.1:58044/session/958e4501ba39000b8ea9c3562f39037b/element/0.2534844983375093-3/click {"sessionId": "958e4501ba39000b8ea9c3562f39037b", "id": "0.2534844983375093-3"}
+Wed, 11 Oct 2017 19:44:38 remote_connection.py[line:565] DEBUG Finished Request
+Wed, 11 Oct 2017 19:44:39 remote_connection.py[line:478] DEBUG GET http://127.0.0.1:58044/session/958e4501ba39000b8ea9c3562f39037b/title {"sessionId": "958e4501ba39000b8ea9c3562f39037b"}
+Wed, 11 Oct 2017 19:44:39 remote_connection.py[line:565] DEBUG Finished Request
+Wed, 11 Oct 2017 19:44:39 remote_connection.py[line:478] DEBUG GET http://127.0.0.1:58044/session/958e4501ba39000b8ea9c3562f39037b/cookie {"sessionId": "958e4501ba39000b8ea9c3562f39037b"}
+Wed, 11 Oct 2017 19:44:39 remote_connection.py[line:565] DEBUG Finished Request
+Wed, 11 Oct 2017 19:44:39 cookies.py[line:63] INFO Get Cookie success! Account[Azucena.skeen0@yahoo.com], [{u'lang': u'en', u'remember_checked_on': u'1', u'tip_nightmode': u'true', u'_twitter_sess': u'BAh7CiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%250ASGFzaHsABjoKQHVzZWR7ADoPY3JlYXRlZF9hdGwrCDcLQAtfAToMY3NyZl9p%250AZCIlMjFiYTFkZWI1NGI4MGU5ZTZmNzIzN2MyYTQwOGYwYmE6B2lkIiVhMGU0%250AYjkyOGJmODI4ZmVhZWQzZTBiNDMwNTUyYmQ5MzoJdXNlcmwrCQDQl2ttt6MM--7f4aa4913528037e66c39a96f93437c0aa6fbaa9', u'ads_prefs': u'"HBERAAA="', u'auth_token': u'ad1ce8180f0309fbd24d0854af520cbd484cc8bd', u'_ga': u'GA1.2.525912889.1507722271', u'guest_id': u'v1%3A150772226744356932', u'kdt': u'2p4k9FWNmELfXAittuUgzmbkbVCi0OygA093WzUi', u'personalization_id': u'"v1_kf2dbWIPzA40pdp1bhdRdQ=="', u'_gid': u'GA1.2.431431251.1507722271', u'twid': u'"u=910773230243401728"', u'ct0': u'a56df26f48c8a9dfe56b804d476d665a', u'_gat': u'1'}]!
+Wed, 11 Oct 2017 19:44:39 remote_connection.py[line:478] DEBUG DELETE http://127.0.0.1:58044/session/958e4501ba39000b8ea9c3562f39037b/window {"sessionId": "958e4501ba39000b8ea9c3562f39037b"}
+Wed, 11 Oct 2017 19:44:40 remote_connection.py[line:565] DEBUG Finished Request
+Wed, 11 Oct 2017 19:44:40 cookies.py[line:79] INFO Get Cookies Finish [{u'lang': u'en', u'remember_checked_on': u'1', u'tip_nightmode': u'true', u'_twitter_sess': u'BAh7CiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%250ASGFzaHsABjoKQHVzZWR7ADoPY3JlYXRlZF9hdGwrCDcLQAtfAToMY3NyZl9p%250AZCIlMjFiYTFkZWI1NGI4MGU5ZTZmNzIzN2MyYTQwOGYwYmE6B2lkIiVhMGU0%250AYjkyOGJmODI4ZmVhZWQzZTBiNDMwNTUyYmQ5MzoJdXNlcmwrCQDQl2ttt6MM--7f4aa4913528037e66c39a96f93437c0aa6fbaa9', u'ads_prefs': u'"HBERAAA="', u'auth_token': u'ad1ce8180f0309fbd24d0854af520cbd484cc8bd', u'_ga': u'GA1.2.525912889.1507722271', u'guest_id': u'v1%3A150772226744356932', u'kdt': u'2p4k9FWNmELfXAittuUgzmbkbVCi0OygA093WzUi', u'personalization_id': u'"v1_kf2dbWIPzA40pdp1bhdRdQ=="', u'_gid': u'GA1.2.431431251.1507722271', u'twid': u'"u=910773230243401728"', u'ct0': u'a56df26f48c8a9dfe56b804d476d665a', u'_gat': u'1'}]
+Wed, 11 Oct 2017 19:44:40 log.py[line:144] INFO Scrapy 1.4.0 started (bot: twitter)
+Wed, 11 Oct 2017 19:44:40 log.py[line:147] INFO Overridden settings: {'NEWSPIDER_MODULE': 'highcloud.spiders', 'SPIDER_MODULES': ['highcloud.spiders'], 'BOT_NAME': 'twitter'}
+Wed, 11 Oct 2017 19:44:41 middleware.py[line:53] INFO Enabled extensions:
+['scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+Wed, 11 Oct 2017 19:44:42 middleware.py[line:53] INFO Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'highcloud.twitter.middlewares.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+Wed, 11 Oct 2017 19:44:42 middleware.py[line:53] INFO Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+Wed, 11 Oct 2017 19:44:42 middleware.py[line:53] INFO Enabled item pipelines:
+['highcloud.twitter.pipelines.TwitterPipeline']
+Wed, 11 Oct 2017 19:44:42 engine.py[line:256] INFO Spider opened
+Wed, 11 Oct 2017 19:44:42 logstats.py[line:48] INFO Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+Wed, 11 Oct 2017 19:44:42 telnet.py[line:60] DEBUG Telnet console listening on 127.0.0.1:6023
+Wed, 11 Oct 2017 19:44:48 engine.py[line:238] DEBUG Crawled (200) <GET https://mobile.twitter.com/search?q=%E1%9E%94%E1%9F%92%E1%9E%9A%E1%9E%91%E1%9F%81%E1%9E%9F%E1%9E%85%E1%9E%B7%E1%9E%93&src=typd> (referer: None)
+Wed, 11 Oct 2017 19:44:48 __init__.py[line:181] WARNING D:\work\spider\lib\site-packages\bs4\__init__.py:181: UserWarning: No parser was explicitly specified, so I'm using the best available HTML parser for this system ("lxml"). This usually isn't a problem, but if you run this code on another system, or in a different virtual environment, it may use a different parser and behave differently.
+
+The code that caused this warning is on line 168 of the file D:/work/spider/Lib/site-packages/scrapy/cmdline.py. To get rid of this warning, change code that looks like this:
+
+ BeautifulSoup(YOUR_MARKUP})
+
+to this:
+
+ BeautifulSoup(YOUR_MARKUP, "lxml")
+
+  markup_type=markup_type))
+
+Wed, 11 Oct 2017 19:44:49 pipelines.py[line:31] INFO TwitterPipeline.process_item TwitterSocialContent [{'text': u'  \u179f\u17b8\u178f\u17bb\u178e\u17d2\u17a0\u1797\u17b6\u1796\u1785\u17bb\u17c7\u178f\u17d2\u179a\u1787\u17b6\u1780\u17cb\u1781\u17d2\u179b\u17b6\u17c6\u1784\u1793\u17c5\u1797\u17b6\u1782\u1781\u17b6\u1784\u1780\u17be\u178f\u1793\u17b7\u1784\u1796\u17b6\u1799\u1796\u17d2\u1799\u200b\u1794\u17d2\u179a\u1791\u17c1\u179f\u1785\u17b7\u1793 swiftnewsdaily.com/archives/100083 pic.twitter.com/M5Bt4KZ5x3\n', 'created_at': u'Oct 8', 'id': '917204735366782976'}] has insert into redis
+Wed, 11 Oct 2017 19:44:49 scraper.py[line:237] DEBUG Scraped from <200 https://mobile.twitter.com/search?q=%E1%9E%94%E1%9F%92%E1%9E%9A%E1%9E%91%E1%9F%81%E1%9E%9F%E1%9E%85%E1%9E%B7%E1%9E%93&src=typd>
+{'created_at': u'Oct 8',
+ 'id': '917204735366782976',
+ 'text': u'  \u179f\u17b8\u178f\u17bb\u178e\u17d2\u17a0\u1797\u17b6\u1796\u1785\u17bb\u17c7\u178f\u17d2\u179a\u1787\u17b6\u1780\u17cb\u1781\u17d2\u179b\u17b6\u17c6\u1784\u1793\u17c5\u1797\u17b6\u1782\u1781\u17b6\u1784\u1780\u17be\u178f\u1793\u17b7\u1784\u1796\u17b6\u1799\u1796\u17d2\u1799\u200b\u1794\u17d2\u179a\u1791\u17c1\u179f\u1785\u17b7\u1793 swiftnewsdaily.com/archives/100083 pic.twitter.com/M5Bt4KZ5x3\n'}
+Wed, 11 Oct 2017 19:44:49 pipelines.py[line:31] INFO TwitterPipeline.process_item TwitterSocialContent [{'text': u'  \u179f\u17d2\u1796\u17b6\u1793\u1786\u17d2\u179b\u1784\u1790\u17d2\u1793\u179b\u17cb\u1793\u17c1\u17c7 \u179f\u17d2\u1790\u17b7\u178f\u1793\u17c5\u1780\u17d2\u1793\u17bb\u1784\u1780\u17d2\u179a\u17bb\u1784\u179c\u17bc\u17a0\u17b6\u1793 \u1794\u17d2\u179a\u1791\u17c1\u179f\u1785\u17b7\u1793 \u1798\u17be\u179b\u1791\u17c5\u17a0\u17b6\u1780\u17cb\u178a\u17bc\u1785\u1787\u17b6 \u1790\u178f\u1785\u1798\u17d2\u179b\u1784 \u17ac\u179f\u17d2\u179a\u178a\u17c0\u1784\u1782\u17d2\u1793\u17b6 \u1793\u17b9\u1784\u179f\u17d2\u1796\u17b6\u1793\u1786\u17d2\u179b\u1784\u1795\u17d2\u179b\u17bc\u179c\u1791\u17b8\u17e1... fb.me/1H7vI4Ufs\n', 'created_at': u'Oct 1', 'id': '914695451991003136'}] has insert into redis
+Wed, 11 Oct 2017 19:44:49 scraper.py[line:237] DEBUG Scraped from <200 https://mobile.twitter.com/search?q=%E1%9E%94%E1%9F%92%E1%9E%9A%E1%9E%91%E1%9F%81%E1%9E%9F%E1%9E%85%E1%9E%B7%E1%9E%93&src=typd>
+{'created_at': u'Oct 1',
+ 'id': '914695451991003136',
+ 'text': u'  \u179f\u17d2\u1796\u17b6\u1793\u1786\u17d2\u179b\u1784\u1790\u17d2\u1793\u179b\u17cb\u1793\u17c1\u17c7 \u179f\u17d2\u1790\u17b7\u178f\u1793\u17c5\u1780\u17d2\u1793\u17bb\u1784\u1780\u17d2\u179a\u17bb\u1784\u179c\u17bc\u17a0\u17b6\u1793 \u1794\u17d2\u179a\u1791\u17c1\u179f\u1785\u17b7\u1793 \u1798\u17be\u179b\u1791\u17c5\u17a0\u17b6\u1780\u17cb\u178a\u17bc\u1785\u1787\u17b6 \u1790\u178f\u1785\u1798\u17d2\u179b\u1784 \u17ac\u179f\u17d2\u179a\u178a\u17c0\u1784\u1782\u17d2\u1793\u17b6 \u1793\u17b9\u1784\u179f\u17d2\u1796\u17b6\u1793\u1786\u17d2\u179b\u1784\u1795\u17d2\u179b\u17bc\u179c\u1791\u17b8\u17e1... fb.me/1H7vI4Ufs\n'}
+Wed, 11 Oct 2017 19:44:53 pipelines.py[line:31] INFO TwitterPipeline.process_item TwitterSocialContent [{'text': u' #instadaily @ \u179c\u17b7\u1791\u17d2\u1799\u17b6\u179f\u17d2\u1790\u17b6\u1793\u1780\u17b6\u179a\u1796\u17b6\u179a\u17a2\u17b6\u1780\u17b6\u179f - \u1794\u17d2\u179a\u1791\u17c1\u179f\u1785\u17b7\u1793 instagram.com/p/BZTGxCgHzUQ/\n', 'created_at': u'Sep 21', 'id': '910802244861231104'}] has insert into redis
+Wed, 11 Oct 2017 19:44:53 scraper.py[line:237] DEBUG Scraped from <200 https://mobile.twitter.com/search?q=%E1%9E%94%E1%9F%92%E1%9E%9A%E1%9E%91%E1%9F%81%E1%9E%9F%E1%9E%85%E1%9E%B7%E1%9E%93&src=typd>
+{'created_at': u'Sep 21',
+ 'id': '910802244861231104',
+ 'text': u' #instadaily @ \u179c\u17b7\u1791\u17d2\u1799\u17b6\u179f\u17d2\u1790\u17b6\u1793\u1780\u17b6\u179a\u1796\u17b6\u179a\u17a2\u17b6\u1780\u17b6\u179f - \u1794\u17d2\u179a\u1791\u17c1\u179f\u1785\u17b7\u1793 instagram.com/p/BZTGxCgHzUQ/\n'}
+Wed, 11 Oct 2017 19:44:58 pipelines.py[line:31] INFO TwitterPipeline.process_item TwitterSocialContent [{'text': u'  \u1791\u17b8\u1780\u17d2\u179a\u17bb\u1784\u1788\u17b7\u1793\u178c\u17bc \u1794\u17d2\u179a\u1791\u17c1\u179f\u1785\u17b7\u1793\u17d6... fb.me/8rAsrh8Va\n', 'created_at': u'Sep 19', 'id': '910050304493633536'}] has insert into redis
+Wed, 11 Oct 2017 19:44:58 scraper.py[line:237] DEBUG Scraped from <200 https://mobile.twitter.com/search?q=%E1%9E%94%E1%9F%92%E1%9E%9A%E1%9E%91%E1%9F%81%E1%9E%9F%E1%9E%85%E1%9E%B7%E1%9E%93&src=typd>
+{'created_at': u'Sep 19',
+ 'id': '910050304493633536',
+ 'text': u'  \u1791\u17b8\u1780\u17d2\u179a\u17bb\u1784\u1788\u17b7\u1793\u178c\u17bc \u1794\u17d2\u179a\u1791\u17c1\u179f\u1785\u17b7\u1793\u17d6... fb.me/8rAsrh8Va\n'}
+Wed, 11 Oct 2017 19:44:58 engine.py[line:238] DEBUG Crawled (200) <GET https://mobile.twitter.com/Swiftnews_kh?p=s> (referer: https://mobile.twitter.com/search?q=%E1%9E%94%E1%9F%92%E1%9E%9A%E1%9E%91%E1%9F%81%E1%9E%9F%E1%9E%85%E1%9E%B7%E1%9E%93&src=typd)
+Wed, 11 Oct 2017 19:45:03 pipelines.py[line:31] INFO TwitterPipeline.process_item TwitterSocialContent [{'text': u'  \u1794\u17b6\u1793\u1792\u17d2\u179c\u17be\u1794\u1791\u1794\u1784\u17d2\u17a0\u17b6\u1789\u1781\u17d2\u179b\u17b8\u200b \u1780\u17b6\u179b\u1796\u17b8\u179a\u179f\u17c0\u179b\u1790\u17d2\u1784\u17c3\u1791\u17b8\u17e1\u17e3\u200b \u1781\u17c2\u178f\u17bb\u179b\u17b6 \u1793\u17c5\u1791\u17b8\u1780\u17d2\u179a\u17bb\u1784\u178e\u17b6\u1793\u1793\u17b8\u1784\u200b \u1794\u17d2\u179a\u1791\u17c1\u179f\u1785\u17b7\u1793\u200b \u178a\u17be\u1798\u17d2\u1794\u17b8\u1791\u17b6\u1780\u17cb\u1791\u17b6\u1789\u1780\u17b6\u179a\u1785\u17b6\u1794\u17cb\u17a2\u17b6\u179a\u1798\u17d2\u1798\u178e\u17cd\u200b \u1785\u17c6\u1796\u17c4\u17c7\u200b... fb.me/1t8KHdgBx\n', 'created_at': u'Sep 14', 'id': '908261592697012225'}] has insert into redis
+Wed, 11 Oct 2017 19:45:03 scraper.py[line:237] DEBUG Scraped from <200 https://mobile.twitter.com/search?q=%E1%9E%94%E1%9F%92%E1%9E%9A%E1%9E%91%E1%9F%81%E1%9E%9F%E1%9E%85%E1%9E%B7%E1%9E%93&src=typd>
+{'created_at': u'Sep 14',
+ 'id': '908261592697012225',
+ 'text': u'  \u1794\u17b6\u1793\u1792\u17d2\u179c\u17be\u1794\u1791\u1794\u1784\u17d2\u17a0\u17b6\u1789\u1781\u17d2\u179b\u17b8\u200b \u1780\u17b6\u179b\u1796\u17b8\u179a\u179f\u17c0\u179b\u1790\u17d2\u1784\u17c3\u1791\u17b8\u17e1\u17e3\u200b \u1781\u17c2\u178f\u17bb\u179b\u17b6 \u1793\u17c5\u1791\u17b8\u1780\u17d2\u179a\u17bb\u1784\u178e\u17b6\u1793\u1793\u17b8\u1784\u200b \u1794\u17d2\u179a\u1791\u17c1\u179f\u1785\u17b7\u1793\u200b \u178a\u17be\u1798\u17d2\u1794\u17b8\u1791\u17b6\u1780\u17cb\u1791\u17b6\u1789\u1780\u17b6\u179a\u1785\u17b6\u1794\u17cb\u17a2\u17b6\u179a\u1798\u17d2\u1798\u178e\u17cd\u200b \u1785\u17c6\u1796\u17c4\u17c7\u200b... fb.me/1t8KHdgBx\n'}
+Wed, 11 Oct 2017 19:45:07 pipelines.py[line:31] INFO TwitterPipeline.process_item TwitterSocialContent [{'text': u'  \u179b\u17c4\u1780\u17a2\u1797\u17b7\u1794\u17b6\u179b\u1781\u17c1\u178f\u17d2\u178f\u1780\u17d2\u179c\u17b6\u1784\u179f\u17ca\u17b8 \u1794\u17d2\u179a\u1791\u17c1\u179f\u1785\u17b7\u1793 \u1794\u17b6\u1793\u1794\u17d2\u179a\u1782\u179b\u17cb\u17a2\u17c6\u178e\u17c4\u1799\u1785\u17c6\u1793\u17bd\u1793\u17e1\u179b\u17b6\u1793\u178a\u17bb\u179b\u17d2\u179b\u17b6\u179a\u178a\u179b\u17cb\u179f\u1798\u17d2\u178a\u17c1\u1785 \u17a0\u17ca\u17bb\u1793 \u179f\u17c2\u1793... fb.me/92rzHtyJY\n', 'created_at': u'Sep 13', 'id': '908138160495796224'}] has insert into redis
+Wed, 11 Oct 2017 19:45:07 scraper.py[line:237] DEBUG Scraped from <200 https://mobile.twitter.com/search?q=%E1%9E%94%E1%9F%92%E1%9E%9A%E1%9E%91%E1%9F%81%E1%9E%9F%E1%9E%85%E1%9E%B7%E1%9E%93&src=typd>
+{'created_at': u'Sep 13',
+ 'id': '908138160495796224',
+ 'text': u'  \u179b\u17c4\u1780\u17a2\u1797\u17b7\u1794\u17b6\u179b\u1781\u17c1\u178f\u17d2\u178f\u1780\u17d2\u179c\u17b6\u1784\u179f\u17ca\u17b8 \u1794\u17d2\u179a\u1791\u17c1\u179f\u1785\u17b7\u1793 \u1794\u17b6\u1793\u1794\u17d2\u179a\u1782\u179b\u17cb\u17a2\u17c6\u178e\u17c4\u1799\u1785\u17c6\u1793\u17bd\u1793\u17e1\u179b\u17b6\u1793\u178a\u17bb\u179b\u17d2\u179b\u17b6\u179a\u178a\u179b\u17cb\u179f\u1798\u17d2\u178a\u17c1\u1785 \u17a0\u17ca\u17bb\u1793 \u179f\u17c2\u1793... fb.me/92rzHtyJY\n'}
+Wed, 11 Oct 2017 19:45:07 engine.py[line:238] DEBUG Crawled (200) <GET https://mobile.twitter.com/Chiduru99?p=s> (referer: https://mobile.twitter.com/search?q=%E1%9E%94%E1%9F%92%E1%9E%9A%E1%9E%91%E1%9F%81%E1%9E%9F%E1%9E%85%E1%9E%B7%E1%9E%93&src=typd)
+Wed, 11 Oct 2017 19:45:08 pipelines.py[line:28] INFO TwitterPipeline.process_item TwitterSocialUser [{'name': u'Swiftnews_kh', 'url': u'https://mobile.twitter.com/Swiftnews_kh', 'image': 'https://pbs.twimg.com/profile_images/900571938250137600/AcK3du48_normal.jpg', 'nick': u'Swift News', 'followers': u'11', 'following': u'77', 'id': u'Swiftnews_kh'}] has insert into redis
+Wed, 11 Oct 2017 19:45:08 scraper.py[line:237] DEBUG Scraped from <200 https://mobile.twitter.com/Swiftnews_kh?p=s>
+{'followers': u'11',
+ 'following': u'77',
+ 'id': u'Swiftnews_kh',
+ 'image': 'https://pbs.twimg.com/profile_images/900571938250137600/AcK3du48_normal.jpg',
+ 'name': u'Swiftnews_kh',
+ 'nick': u'Swift News',
+ 'url': u'https://mobile.twitter.com/Swiftnews_kh'}
+Wed, 11 Oct 2017 19:45:12 pipelines.py[line:31] INFO TwitterPipeline.process_item TwitterSocialContent [{'text': u' \u1794\u17d2\u179a\u1791\u17c1\u179f\u1785\u17b7\u1793 \u1799\u17bd\u1793 \u1781\u17c6\u1794\u17ba\u178f\u1788\u17b6\u1798\u1796\u17b8\u1781\u17d2\u1798\u17c2\u179a \u1794\u17c9\u17bb\u1793\u17d2\u178f\u17c2\u17a2\u17b6\u1798\u17c1\u179a\u17b7\u1780 \u1793\u17b7\u1784\u17a2\u17ba\u179a\u17c9\u17bb\u1794 \u1781\u17c6\u1787\u17bd\u1799\u1781\u17d2\u1798\u17c2\u179a! \u179a\u178a\u17d2\u178b\u17b6\u1797\u17b7\u1794\u17b6\u179b \u17a0\u17ca\u17bb\u1793 \u179f\u17c2\u1793 \u1781\u17c6\u1785\u17c4\u1791\u200b\u179b\u17b6\u1794\u1796\u178e\u17cc\u200b\u17a2\u17b6\u1798CWCI Cambodia cwcicambodia.com/2017/09/13/%E1\u2026\n', 'created_at': u'Sep 13', 'id': '908092075198914560'}] has insert into redis
+Wed, 11 Oct 2017 19:45:12 scraper.py[line:237] DEBUG Scraped from <200 https://mobile.twitter.com/search?q=%E1%9E%94%E1%9F%92%E1%9E%9A%E1%9E%91%E1%9F%81%E1%9E%9F%E1%9E%85%E1%9E%B7%E1%9E%93&src=typd>
+{'created_at': u'Sep 13',
+ 'id': '908092075198914560',
+ 'text': u' \u1794\u17d2\u179a\u1791\u17c1\u179f\u1785\u17b7\u1793 \u1799\u17bd\u1793 \u1781\u17c6\u1794\u17ba\u178f\u1788\u17b6\u1798\u1796\u17b8\u1781\u17d2\u1798\u17c2\u179a \u1794\u17c9\u17bb\u1793\u17d2\u178f\u17c2\u17a2\u17b6\u1798\u17c1\u179a\u17b7\u1780 \u1793\u17b7\u1784\u17a2\u17ba\u179a\u17c9\u17bb\u1794 \u1781\u17c6\u1787\u17bd\u1799\u1781\u17d2\u1798\u17c2\u179a! \u179a\u178a\u17d2\u178b\u17b6\u1797\u17b7\u1794\u17b6\u179b \u17a0\u17ca\u17bb\u1793 \u179f\u17c2\u1793 \u1781\u17c6\u1785\u17c4\u1791\u200b\u179b\u17b6\u1794\u1796\u178e\u17cc\u200b\u17a2\u17b6\u1798CWCI Cambodia cwcicambodia.com/2017/09/13/%E1\u2026\n'}
+Wed, 11 Oct 2017 19:45:17 pipelines.py[line:31] INFO TwitterPipeline.process_item TwitterSocialContent [{'text': u'  \u1780\u17b6\u179a\u178f\u17b6\u17c6\u1784\u1796\u17b7\u1796\u178e\u17cd\u1785\u17b7\u1793-\u17a2\u17b6\u179f\u17ca\u17b6\u1793\u179b\u17be\u1780\u1791\u17b8\u17e1\u17e4 \u1793\u17c5\u1791\u17b8\u1780\u17d2\u179a\u17bb\u1784\u178e\u17b6\u1793\u1793\u17b8\u1784 \u1794\u17d2\u179a\u1791\u17c1\u179f\u1785\u17b7\u1793\u17d4 \u1781\u17d2\u1789\u17bb\u17c6\u1798\u17b6\u1793\u1798\u17c4\u1791\u1793\u1797\u17b6\u1796 \u178a\u17c2\u179b\u1794\u17b6\u1793\u1783\u17be\u1789\u1795\u179b\u17b7\u178f\u1795\u179b \u1781\u17d2\u1798\u17c2\u179a\u1799\u17be\u1784 \u1798\u17b6\u1793\u178a\u17b6\u1780\u17cb\u178f\u17b6\u17c6\u1784\u1794\u1784\u17d2\u17a0\u17b6\u1789 \u1793\u17c5\u1791\u17b8\u1793\u17c1\u17c7\u17d4\n', 'created_at': u'Sep 13', 'id': '907884689658204160'}] has insert into redis
+Wed, 11 Oct 2017 19:45:17 scraper.py[line:237] DEBUG Scraped from <200 https://mobile.twitter.com/search?q=%E1%9E%94%E1%9F%92%E1%9E%9A%E1%9E%91%E1%9F%81%E1%9E%9F%E1%9E%85%E1%9E%B7%E1%9E%93&src=typd>
+{'created_at': u'Sep 13',
+ 'id': '907884689658204160',
+ 'text': u'  \u1780\u17b6\u179a\u178f\u17b6\u17c6\u1784\u1796\u17b7\u1796\u178e\u17cd\u1785\u17b7\u1793-\u17a2\u17b6\u179f\u17ca\u17b6\u1793\u179b\u17be\u1780\u1791\u17b8\u17e1\u17e4 \u1793\u17c5\u1791\u17b8\u1780\u17d2\u179a\u17bb\u1784\u178e\u17b6\u1793\u1793\u17b8\u1784 \u1794\u17d2\u179a\u1791\u17c1\u179f\u1785\u17b7\u1793\u17d4 \u1781\u17d2\u1789\u17bb\u17c6\u1798\u17b6\u1793\u1798\u17c4\u1791\u1793\u1797\u17b6\u1796 \u178a\u17c2\u179b\u1794\u17b6\u1793\u1783\u17be\u1789\u1795\u179b\u17b7\u178f\u1795\u179b \u1781\u17d2\u1798\u17c2\u179a\u1799\u17be\u1784 \u1798\u17b6\u1793\u178a\u17b6\u1780\u17cb\u178f\u17b6\u17c6\u1784\u1794\u1784\u17d2\u17a0\u17b6\u1789 \u1793\u17c5\u1791\u17b8\u1793\u17c1\u17c7\u17d4\n'}
+Wed, 11 Oct 2017 19:45:17 engine.py[line:238] DEBUG Crawled (200) <GET https://mobile.twitter.com/HongSokHour?p=s> (referer: https://mobile.twitter.com/search?q=%E1%9E%94%E1%9F%92%E1%9E%9A%E1%9E%91%E1%9F%81%E1%9E%9F%E1%9E%85%E1%9E%B7%E1%9E%93&src=typd)
+Wed, 11 Oct 2017 19:45:17 pipelines.py[line:28] INFO TwitterPipeline.process_item TwitterSocialUser [{'status': u'108', 'name': u'Chiduru99', 'url': u'https://mobile.twitter.com/Chiduru99', 'image': 'https://pbs.twimg.com/profile_images/524139734134575105/9vgddL-o_normal.jpeg', 'nick': u'Chiduru', 'followers': u'8', 'following': u'15', 'id': u'Chiduru99'}] has insert into redis
+Wed, 11 Oct 2017 19:45:17 scraper.py[line:237] DEBUG Scraped from <200 https://mobile.twitter.com/Chiduru99?p=s>
+{'followers': u'8',
+ 'following': u'15',
+ 'id': u'Chiduru99',
+ 'image': 'https://pbs.twimg.com/profile_images/524139734134575105/9vgddL-o_normal.jpeg',
+ 'name': u'Chiduru99',
+ 'nick': u'Chiduru',
+ 'status': u'108',
+ 'url': u'https://mobile.twitter.com/Chiduru99'}
+Wed, 11 Oct 2017 19:45:22 pipelines.py[line:31] INFO TwitterPipeline.process_item TwitterSocialContent [{'text': u'  \u179c\u17b8\u178a\u17c1\u17a2\u17bc \u17d6  \u200b\u1794\u17d2\u179a\u1791\u17c1\u179f\u1785\u17b7\u1793\u200b\u1796\u17b7\u1785\u17b6\u179a\u178e\u17b6\u200b\u1794\u1789\u17d2\u1788\u1794\u17cb\u1780\u17b6\u179a\u1795\u179b\u17b7\u178f \u1793\u17b7\u1784\u179b\u1780\u17cb\u179a\u1790\u1799\u1793\u17d2\u178f\u200b\u1794\u17d2\u179a\u17be\u200b\u179f\u17b6\u17c6\u1784\u1793\u17b7\u1784\u1798\u17c9\u17b6\u179f\u17ca\u17bc\u178f swiftnewsdaily.com/archives/91364 pic.twitter.com/vgGmaKn7Xr\n', 'created_at': u'Sep 11', 'id': '907484907332669440'}] has insert into redis
+Wed, 11 Oct 2017 19:45:22 scraper.py[line:237] DEBUG Scraped from <200 https://mobile.twitter.com/search?q=%E1%9E%94%E1%9F%92%E1%9E%9A%E1%9E%91%E1%9F%81%E1%9E%9F%E1%9E%85%E1%9E%B7%E1%9E%93&src=typd>
+{'created_at': u'Sep 11',
+ 'id': '907484907332669440',
+ 'text': u'  \u179c\u17b8\u178a\u17c1\u17a2\u17bc \u17d6  \u200b\u1794\u17d2\u179a\u1791\u17c1\u179f\u1785\u17b7\u1793\u200b\u1796\u17b7\u1785\u17b6\u179a\u178e\u17b6\u200b\u1794\u1789\u17d2\u1788\u1794\u17cb\u1780\u17b6\u179a\u1795\u179b\u17b7\u178f \u1793\u17b7\u1784\u179b\u1780\u17cb\u179a\u1790\u1799\u1793\u17d2\u178f\u200b\u1794\u17d2\u179a\u17be\u200b\u179f\u17b6\u17c6\u1784\u1793\u17b7\u1784\u1798\u17c9\u17b6\u179f\u17ca\u17bc\u178f swiftnewsdaily.com/archives/91364 pic.twitter.com/vgGmaKn7Xr\n'}
+Wed, 11 Oct 2017 19:45:27 pipelines.py[line:31] INFO TwitterPipeline.process_item TwitterSocialContent [{'text': u'  \u179f\u1798\u17d2\u178f\u17c1\u1785\u178f\u17c1\u1787\u17c4 \u17a0\u17ca\u17bb\u1793 \u179f\u17c2\u1793 \u17a2\u1789\u17d2\u1787\u17be\u1789\u1791\u17c5\u178a\u179b\u17cb\u17a2\u17b6\u1780\u17b6\u179f\u1799\u17b6\u1793\u178a\u17d2\u178b\u17b6\u1793\u17a2\u1793\u17d2\u178f\u179a\u1787\u17b6\u178f\u17b7 \u179c\u17c9\u17bc\u179f\u17ca\u17bc \u1791\u17b8\u1780\u17d2\u179a\u17bb\u1784\u178e\u17b6\u1793\u17cb\u1793\u17b8\u1784 \u1781\u17c1\u178f\u17d2\u178f\u1780\u17d2\u179c\u17b6\u1784\u179f\u17ca\u17b8 \u1794\u17d2\u179a\u1791\u17c1\u179f\u1785\u17b7\u1793 \u178a\u17be\u1798\u17d2\u1794\n\npressocm.gov.kh/archives/12540 pic.twitter.com/fTcGmMed2N\n', 'created_at': u'Sep 11', 'id': '907169840091217921'}] has insert into redis
+Wed, 11 Oct 2017 19:45:27 scraper.py[line:237] DEBUG Scraped from <200 https://mobile.twitter.com/search?q=%E1%9E%94%E1%9F%92%E1%9E%9A%E1%9E%91%E1%9F%81%E1%9E%9F%E1%9E%85%E1%9E%B7%E1%9E%93&src=typd>
+{'created_at': u'Sep 11',
+ 'id': '907169840091217921',
+ 'text': u'  \u179f\u1798\u17d2\u178f\u17c1\u1785\u178f\u17c1\u1787\u17c4 \u17a0\u17ca\u17bb\u1793 \u179f\u17c2\u1793 \u17a2\u1789\u17d2\u1787\u17be\u1789\u1791\u17c5\u178a\u179b\u17cb\u17a2\u17b6\u1780\u17b6\u179f\u1799\u17b6\u1793\u178a\u17d2\u178b\u17b6\u1793\u17a2\u1793\u17d2\u178f\u179a\u1787\u17b6\u178f\u17b7 \u179c\u17c9\u17bc\u179f\u17ca\u17bc \u1791\u17b8\u1780\u17d2\u179a\u17bb\u1784\u178e\u17b6\u1793\u17cb\u1793\u17b8\u1784 \u1781\u17c1\u178f\u17d2\u178f\u1780\u17d2\u179c\u17b6\u1784\u179f\u17ca\u17b8 \u1794\u17d2\u179a\u1791\u17c1\u179f\u1785\u17b7\u1793 \u178a\u17be\u1798\u17d2\u1794\n\npressocm.gov.kh/archives/12540 pic.twitter.com/fTcGmMed2N\n'}
+Wed, 11 Oct 2017 19:45:27 engine.py[line:238] DEBUG Crawled (200) <GET https://mobile.twitter.com/HanleyHong?p=s> (referer: https://mobile.twitter.com/search?q=%E1%9E%94%E1%9F%92%E1%9E%9A%E1%9E%91%E1%9F%81%E1%9E%9F%E1%9E%85%E1%9E%B7%E1%9E%93&src=typd)
+Wed, 11 Oct 2017 19:45:27 pipelines.py[line:28] INFO TwitterPipeline.process_item TwitterSocialUser [{'status': u'874', 'name': u'HongSokHour', 'url': u'https://mobile.twitter.com/HongSokHour', 'image': 'https://pbs.twimg.com/profile_images/567700704765042689/wjFS90sJ_normal.jpeg', 'nick': u'Hong, Sok-Hour', 'followers': u'35', 'following': u'11', 'id': u'HongSokHour'}] has insert into redis
+Wed, 11 Oct 2017 19:45:27 scraper.py[line:237] DEBUG Scraped from <200 https://mobile.twitter.com/HongSokHour?p=s>
+{'followers': u'35',
+ 'following': u'11',
+ 'id': u'HongSokHour',
+ 'image': 'https://pbs.twimg.com/profile_images/567700704765042689/wjFS90sJ_normal.jpeg',
+ 'name': u'HongSokHour',
+ 'nick': u'Hong, Sok-Hour',
+ 'status': u'874',
+ 'url': u'https://mobile.twitter.com/HongSokHour'}
+Wed, 11 Oct 2017 19:45:32 pipelines.py[line:31] INFO TwitterPipeline.process_item TwitterSocialContent [{'text': u'  \u1798\u1793\u17bb\u179f\u17d2\u179f\u1794\u17d2\u179a\u17b6\u17c6\u1794\u17bd\u1793\u1793\u17b6\u1780\u17cb\u200b\u1780\u1794\u17cb\u1780\u17d2\u179a\u17c4\u1798\u178a\u17b8\u1794\u1793\u17d2\u1791\u17b6\u1794\u17cb\u1796\u17b8\u1798\u17b6\u1793\u200b\u1782\u17d2\u179a\u17c4\u17c7\u200b\u1794\u17b6\u1780\u17cb\u178a\u17b8\u1793\u17c5\u200b\u1794\u17d2\u179a\u1791\u17c1\u179f\u1785\u17b7\u1793 swiftnewsdaily.com/archives/86517 pic.twitter.com/A1uu9ZrV5W\n', 'created_at': u'Aug 30', 'id': '903079501411713025'}] has insert into redis
+Wed, 11 Oct 2017 19:45:32 scraper.py[line:237] DEBUG Scraped from <200 https://mobile.twitter.com/search?q=%E1%9E%94%E1%9F%92%E1%9E%9A%E1%9E%91%E1%9F%81%E1%9E%9F%E1%9E%85%E1%9E%B7%E1%9E%93&src=typd>
+{'created_at': u'Aug 30',
+ 'id': '903079501411713025',
+ 'text': u'  \u1798\u1793\u17bb\u179f\u17d2\u179f\u1794\u17d2\u179a\u17b6\u17c6\u1794\u17bd\u1793\u1793\u17b6\u1780\u17cb\u200b\u1780\u1794\u17cb\u1780\u17d2\u179a\u17c4\u1798\u178a\u17b8\u1794\u1793\u17d2\u1791\u17b6\u1794\u17cb\u1796\u17b8\u1798\u17b6\u1793\u200b\u1782\u17d2\u179a\u17c4\u17c7\u200b\u1794\u17b6\u1780\u17cb\u178a\u17b8\u1793\u17c5\u200b\u1794\u17d2\u179a\u1791\u17c1\u179f\u1785\u17b7\u1793 swiftnewsdaily.com/archives/86517 pic.twitter.com/A1uu9ZrV5W\n'}
+Wed, 11 Oct 2017 19:45:36 pipelines.py[line:31] INFO TwitterPipeline.process_item TwitterSocialContent [{'text': u'  \u1780\u17d2\u179a\u17bb\u1798\u17a0\u17ca\u17bb\u1793\u200b\u17a2\u17b6\u1780\u17b6\u179f\u1785\u179a\u178e\u17cd\u200b\u179a\u178a\u17d2\u178b\u200b\u179a\u1794\u179f\u17cb\u200b\u1794\u17d2\u179a\u1791\u17c1\u179f\u1785\u17b7\u1793\u200b \u1785\u17bc\u179b\u1785\u17b7\u178f\u17d2\u178f\u200b\u1791\u17b8\u1795\u17d2\u179f\u17b6\u179a\u200b\u1780\u17d2\u1793\u17bb\u1784\u179f\u17d2\u179a\u17bb\u1780\nkampucheathmey.com/2016/archives/\u2026 fb.me/1njV1egpg\n', 'created_at': u'Aug 29', 'id': '902541094289854464'}] has insert into redis
+Wed, 11 Oct 2017 19:45:36 scraper.py[line:237] DEBUG Scraped from <200 https://mobile.twitter.com/search?q=%E1%9E%94%E1%9F%92%E1%9E%9A%E1%9E%91%E1%9F%81%E1%9E%9F%E1%9E%85%E1%9E%B7%E1%9E%93&src=typd>
+{'created_at': u'Aug 29',
+ 'id': '902541094289854464',
+ 'text': u'  \u1780\u17d2\u179a\u17bb\u1798\u17a0\u17ca\u17bb\u1793\u200b\u17a2\u17b6\u1780\u17b6\u179f\u1785\u179a\u178e\u17cd\u200b\u179a\u178a\u17d2\u178b\u200b\u179a\u1794\u179f\u17cb\u200b\u1794\u17d2\u179a\u1791\u17c1\u179f\u1785\u17b7\u1793\u200b \u1785\u17bc\u179b\u1785\u17b7\u178f\u17d2\u178f\u200b\u1791\u17b8\u1795\u17d2\u179f\u17b6\u179a\u200b\u1780\u17d2\u1793\u17bb\u1784\u179f\u17d2\u179a\u17bb\u1780\nkampucheathmey.com/2016/archives/\u2026 fb.me/1njV1egpg\n'}
+Wed, 11 Oct 2017 19:45:36 engine.py[line:238] DEBUG Crawled (200) <GET https://mobile.twitter.com/Swiftnews_kh?p=s> (referer: https://mobile.twitter.com/search?q=%E1%9E%94%E1%9F%92%E1%9E%9A%E1%9E%91%E1%9F%81%E1%9E%9F%E1%9E%85%E1%9E%B7%E1%9E%93&src=typd)
+Wed, 11 Oct 2017 19:45:36 pipelines.py[line:28] INFO TwitterPipeline.process_item TwitterSocialUser [{'name': u'HanleyHong', 'url': u'https://mobile.twitter.com/HanleyHong', 'image': 'https://pbs.twimg.com/profile_images/783799608975560704/_QqvHWeN_normal.jpg', 'nick': u'Hanley Hong', 'followers': u'90', 'following': u'603', 'id': u'HanleyHong'}] has insert into redis
+Wed, 11 Oct 2017 19:45:36 scraper.py[line:237] DEBUG Scraped from <200 https://mobile.twitter.com/HanleyHong?p=s>
+{'followers': u'90',
+ 'following': u'603',
+ 'id': u'HanleyHong',
+ 'image': 'https://pbs.twimg.com/profile_images/783799608975560704/_QqvHWeN_normal.jpg',
+ 'name': u'HanleyHong',
+ 'nick': u'Hanley Hong',
+ 'url': u'https://mobile.twitter.com/HanleyHong'}
+Wed, 11 Oct 2017 19:45:41 pipelines.py[line:31] INFO TwitterPipeline.process_item TwitterSocialContent [{'text': u'  \u4e03\u5915\u5feb\u4e50\uff0c\U0001f64f\U0001f64f\U0001f64f\u6c38\u8fdc\u5e78\u798f\u5feb\u4e50\uff0c\u6211\u7231\u7684\u4ebawhitewo\U0001f48b\U0001f48b\U0001f48b#\u4e03\u5915 #\u6c38\u4f34\u767d\u8239whitewo @ \u179c\u17b7\u1791\u17d2\u1799\u17b6\u179f\u17d2\u1790\u17b6\u1793\u1780\u17b6\u179a\u1796\u17b6\u179a\u17a2\u17b6\u1780\u17b6\u179f - \u1794\u17d2\u179a\u1791\u17c1\u179f\u1785\u17b7\u1793 instagram.com/p/BYVYdBflm13/\n', 'created_at': u'Aug 28', 'id': '902115431040794624'}] has insert into redis
+Wed, 11 Oct 2017 19:45:41 scraper.py[line:237] DEBUG Scraped from <200 https://mobile.twitter.com/search?q=%E1%9E%94%E1%9F%92%E1%9E%9A%E1%9E%91%E1%9F%81%E1%9E%9F%E1%9E%85%E1%9E%B7%E1%9E%93&src=typd>
+{'created_at': u'Aug 28',
+ 'id': '902115431040794624',
+ 'text': u'  \u4e03\u5915\u5feb\u4e50\uff0c\U0001f64f\U0001f64f\U0001f64f\u6c38\u8fdc\u5e78\u798f\u5feb\u4e50\uff0c\u6211\u7231\u7684\u4ebawhitewo\U0001f48b\U0001f48b\U0001f48b#\u4e03\u5915 #\u6c38\u4f34\u767d\u8239whitewo @ \u179c\u17b7\u1791\u17d2\u1799\u17b6\u179f\u17d2\u1790\u17b6\u1793\u1780\u17b6\u179a\u1796\u17b6\u179a\u17a2\u17b6\u1780\u17b6\u179f - \u1794\u17d2\u179a\u1791\u17c1\u179f\u1785\u17b7\u1793 instagram.com/p/BYVYdBflm13/\n'}
+Wed, 11 Oct 2017 19:45:41 engine.py[line:238] DEBUG Crawled (200) <GET https://mobile.twitter.com/FUNCINPECYOUTH?p=s> (referer: https://mobile.twitter.com/search?q=%E1%9E%94%E1%9F%92%E1%9E%9A%E1%9E%91%E1%9F%81%E1%9E%9F%E1%9E%85%E1%9E%B7%E1%9E%93&src=typd)
+Wed, 11 Oct 2017 19:45:46 pipelines.py[line:31] INFO TwitterPipeline.process_item TwitterSocialContent [{'text': u' \u1794\u17d2\u179a\u1791\u17c1\u179f\u1785\u17b7\u1793\u200b\u178a\u17b6\u1780\u17cb\u17b2\u17d2\u1799\u178a\u17c6\u178e\u17be\u179a\u1780\u17b6\u179a \xab\u179a\u1790\u1799\u1793\u17d2\u178f\u1780\u17d2\u179a\u17bb\u1784\u17a2\u178f\u17cb\u17a2\u17d2\u1793\u1780\u1794\u17be\u1780\u1794\u179a \u1793\u17b7\u1784\u1794\u17d2\u179a\u17be\u1790\u17b6\u1798\u1796\u179b\u17a2\u1782\u17d2\u1782\u17b7\u179f\u1793\u17b8\xbb fb.me/7CmYQ5L80\n', 'created_at': u'Aug 16', 'id': '897737937005182976'}] has insert into redis
+Wed, 11 Oct 2017 19:45:46 scraper.py[line:237] DEBUG Scraped from <200 https://mobile.twitter.com/search?q=%E1%9E%94%E1%9F%92%E1%9E%9A%E1%9E%91%E1%9F%81%E1%9E%9F%E1%9E%85%E1%9E%B7%E1%9E%93&src=typd>
+{'created_at': u'Aug 16',
+ 'id': '897737937005182976',
+ 'text': u' \u1794\u17d2\u179a\u1791\u17c1\u179f\u1785\u17b7\u1793\u200b\u178a\u17b6\u1780\u17cb\u17b2\u17d2\u1799\u178a\u17c6\u178e\u17be\u179a\u1780\u17b6\u179a \xab\u179a\u1790\u1799\u1793\u17d2\u178f\u1780\u17d2\u179a\u17bb\u1784\u17a2\u178f\u17cb\u17a2\u17d2\u1793\u1780\u1794\u17be\u1780\u1794\u179a \u1793\u17b7\u1784\u1794\u17d2\u179a\u17be\u1790\u17b6\u1798\u1796\u179b\u17a2\u1782\u17d2\u1782\u17b7\u179f\u1793\u17b8\xbb fb.me/7CmYQ5L80\n'}
+Wed, 11 Oct 2017 19:45:46 engine.py[line:238] DEBUG Crawled (200) <GET https://mobile.twitter.com/Swiftnews_kh?p=s> (referer: https://mobile.twitter.com/search?q=%E1%9E%94%E1%9F%92%E1%9E%9A%E1%9E%91%E1%9F%81%E1%9E%9F%E1%9E%85%E1%9E%B7%E1%9E%93&src=typd)
+Wed, 11 Oct 2017 19:45:46 pipelines.py[line:28] INFO TwitterPipeline.process_item TwitterSocialUser [{'name': u'Swiftnews_kh', 'url': u'https://mobile.twitter.com/Swiftnews_kh', 'image': 'https://pbs.twimg.com/profile_images/900571938250137600/AcK3du48_normal.jpg', 'nick': u'Swift News', 'followers': u'11', 'following': u'77', 'id': u'Swiftnews_kh'}] has insert into redis
+Wed, 11 Oct 2017 19:45:46 scraper.py[line:237] DEBUG Scraped from <200 https://mobile.twitter.com/Swiftnews_kh?p=s>
+{'followers': u'11',
+ 'following': u'77',
+ 'id': u'Swiftnews_kh',
+ 'image': 'https://pbs.twimg.com/profile_images/900571938250137600/AcK3du48_normal.jpg',
+ 'name': u'Swiftnews_kh',
+ 'nick': u'Swift News',
+ 'url': u'https://mobile.twitter.com/Swiftnews_kh'}
+Wed, 11 Oct 2017 19:45:46 logstats.py[line:48] INFO Crawled 8 pages (at 8 pages/min), scraped 19 items (at 19 items/min)
+Wed, 11 Oct 2017 19:45:51 pipelines.py[line:31] INFO TwitterPipeline.process_item TwitterSocialContent [{'text': u'  \u179f\u17d2\u179b\u17b6\u1794\u17cb\u200b\u200b\u17e1\u17e9\u200b\u1793\u17b6\u1780\u17cb\u200b\u1793\u17b7\u1784\u200b\u179a\u1784\u200b\u200b\u179a\u1794\u17bd\u179f\u200b\u17e2\u17e4\u17e7\u200b\u1793\u17b6\u1780\u17cb\u200b\u1793\u17c5\u200b\u1780\u17d2\u1793\u17bb\u1784\u200b\u1782\u17d2\u179a\u17c4\u17c7\u179a\u17c6\u1787\u17bd\u1799\u178a\u17b8\u200b\u1798\u17bd\u1799\u200b\u1793\u17c5\u200b\u1797\u17b6\u1782\u200b\u1793\u17b7\u179a\u178f\u17b8\u200b\u200b\u1794\u17d2\u179a\u1791\u17c1\u179f\u1785\u17b7\u1793\u200b\u200b\u200b rfi.my/1XvB.t pic.twitter.com/jxC3pFKirJ\n', 'created_at': u'Aug 9', 'id': '895255832559890433'}] has insert into redis
+Wed, 11 Oct 2017 19:45:51 scraper.py[line:237] DEBUG Scraped from <200 https://mobile.twitter.com/search?q=%E1%9E%94%E1%9F%92%E1%9E%9A%E1%9E%91%E1%9F%81%E1%9E%9F%E1%9E%85%E1%9E%B7%E1%9E%93&src=typd>
+{'created_at': u'Aug 9',
+ 'id': '895255832559890433',
+ 'text': u'  \u179f\u17d2\u179b\u17b6\u1794\u17cb\u200b\u200b\u17e1\u17e9\u200b\u1793\u17b6\u1780\u17cb\u200b\u1793\u17b7\u1784\u200b\u179a\u1784\u200b\u200b\u179a\u1794\u17bd\u179f\u200b\u17e2\u17e4\u17e7\u200b\u1793\u17b6\u1780\u17cb\u200b\u1793\u17c5\u200b\u1780\u17d2\u1793\u17bb\u1784\u200b\u1782\u17d2\u179a\u17c4\u17c7\u179a\u17c6\u1787\u17bd\u1799\u178a\u17b8\u200b\u1798\u17bd\u1799\u200b\u1793\u17c5\u200b\u1797\u17b6\u1782\u200b\u1793\u17b7\u179a\u178f\u17b8\u200b\u200b\u1794\u17d2\u179a\u1791\u17c1\u179f\u1785\u17b7\u1793\u200b\u200b\u200b rfi.my/1XvB.t pic.twitter.com/jxC3pFKirJ\n'}
+Wed, 11 Oct 2017 19:45:51 engine.py[line:238] DEBUG Crawled (200) <GET https://mobile.twitter.com/CambodiaMot?p=s> (referer: https://mobile.twitter.com/search?q=%E1%9E%94%E1%9F%92%E1%9E%9A%E1%9E%91%E1%9F%81%E1%9E%9F%E1%9E%85%E1%9E%B7%E1%9E%93&src=typd)
+Wed, 11 Oct 2017 19:45:51 engine.py[line:238] DEBUG Crawled (200) <GET https://mobile.twitter.com/kpt_news?p=s> (referer: https://mobile.twitter.com/search?q=%E1%9E%94%E1%9F%92%E1%9E%9A%E1%9E%91%E1%9F%81%E1%9E%9F%E1%9E%85%E1%9E%B7%E1%9E%93&src=typd)
+Wed, 11 Oct 2017 19:45:51 pipelines.py[line:28] INFO TwitterPipeline.process_item TwitterSocialUser [{'name': u'FUNCINPECYOUTH', 'url': u'https://mobile.twitter.com/FUNCINPECYOUTH', 'image': 'https://pbs.twimg.com/profile_images/3119713728/60573903796eb8f6d4a40cf558461823_normal.jpeg', 'nick': u'\u1799\u17bb\u179c\u1787\u1793\u17a0\u17ca\u17d2\u179c\u17bb\u1793\u179f\u17ca\u17b7\u1793\u1794\u17c9\u17b7\u1785', 'followers': u'7', 'following': u'11', 'id': u'FUNCINPECYOUTH'}] has insert into redis
+Wed, 11 Oct 2017 19:45:51 scraper.py[line:237] DEBUG Scraped from <200 https://mobile.twitter.com/FUNCINPECYOUTH?p=s>
+{'followers': u'7',
+ 'following': u'11',
+ 'id': u'FUNCINPECYOUTH',
+ 'image': 'https://pbs.twimg.com/profile_images/3119713728/60573903796eb8f6d4a40cf558461823_normal.jpeg',
+ 'name': u'FUNCINPECYOUTH',
+ 'nick': u'\u1799\u17bb\u179c\u1787\u1793\u17a0\u17ca\u17d2\u179c\u17bb\u1793\u179f\u17ca\u17b7\u1793\u1794\u17c9\u17b7\u1785',
+ 'url': u'https://mobile.twitter.com/FUNCINPECYOUTH'}
+Wed, 11 Oct 2017 19:45:51 pipelines.py[line:31] INFO TwitterPipeline.process_item TwitterSocialContent [{'text': u'  \u1796\u17d0\u178f\u17cc\u1798\u17b6\u1793\u1780\u17d2\u178f\u17c5! \u1794\u17d2\u179a\u1791\u17c1\u179f\u1785\u17b7\u1793 \xab\u179f\u1798\u17d2\u178f\u17c2\u1784\u1780\u17b6\u179a\u1782\u17b6\u17c6\u1791\u17d2\u179a\u179c\u17c1\u178e\u17c1\u179f\u17ca\u17bb\u1799\u17a2\u17c1\u17a1\u17b6\xbb \u1791\u17c4\u17c7\u1794\u17b8\u1787\u17b6\u17a2\u17b6\u1798\u17c1\u179a\u17b7\u1780\u1791\u17be\u1794\u1785\u17bb\u17c7\u1794\u17d2\u179a\u1791\u17c1\u179f\u1793\u17c1\u17c7 \u1785\u17bc\u179b... fb.me/8KnSEz6pa\n', 'created_at': u'Aug 2', 'id': '892958260327743488'}] has insert into redis
+Wed, 11 Oct 2017 19:45:51 scraper.py[line:237] DEBUG Scraped from <200 https://mobile.twitter.com/search?q=%E1%9E%94%E1%9F%92%E1%9E%9A%E1%9E%91%E1%9F%81%E1%9E%9F%E1%9E%85%E1%9E%B7%E1%9E%93&src=typd>
+{'created_at': u'Aug 2',
+ 'id': '892958260327743488',
+ 'text': u'  \u1796\u17d0\u178f\u17cc\u1798\u17b6\u1793\u1780\u17d2\u178f\u17c5! \u1794\u17d2\u179a\u1791\u17c1\u179f\u1785\u17b7\u1793 \xab\u179f\u1798\u17d2\u178f\u17c2\u1784\u1780\u17b6\u179a\u1782\u17b6\u17c6\u1791\u17d2\u179a\u179c\u17c1\u178e\u17c1\u179f\u17ca\u17bb\u1799\u17a2\u17c1\u17a1\u17b6\xbb \u1791\u17c4\u17c7\u1794\u17b8\u1787\u17b6\u17a2\u17b6\u1798\u17c1\u179a\u17b7\u1780\u1791\u17be\u1794\u1785\u17bb\u17c7\u1794\u17d2\u179a\u1791\u17c1\u179f\u1793\u17c1\u17c7 \u1785\u17bc\u179b... fb.me/8KnSEz6pa\n'}
+Wed, 11 Oct 2017 19:45:52 pipelines.py[line:28] INFO TwitterPipeline.process_item TwitterSocialUser [{'name': u'Swiftnews_kh', 'url': u'https://mobile.twitter.com/Swiftnews_kh', 'image': 'https://pbs.twimg.com/profile_images/900571938250137600/AcK3du48_normal.jpg', 'nick': u'Swift News', 'followers': u'11', 'following': u'77', 'id': u'Swiftnews_kh'}] has insert into redis
+Wed, 11 Oct 2017 19:45:52 scraper.py[line:237] DEBUG Scraped from <200 https://mobile.twitter.com/Swiftnews_kh?p=s>
+{'followers': u'11',
+ 'following': u'77',
+ 'id': u'Swiftnews_kh',
+ 'image': 'https://pbs.twimg.com/profile_images/900571938250137600/AcK3du48_normal.jpg',
+ 'name': u'Swiftnews_kh',
+ 'nick': u'Swift News',
+ 'url': u'https://mobile.twitter.com/Swiftnews_kh'}
+Wed, 11 Oct 2017 19:45:52 pipelines.py[line:31] INFO TwitterPipeline.process_item TwitterSocialContent [{'text': u'  \u17a2\u179f\u17d2\u1785\u17b6\u179a\u17d2\u1799\u1798\u17c2\u1793! \u1794\u17d2\u179a\u1791\u17c1\u179f\u1785\u17b7\u1793 \xab\u1787\u17d2\u179a\u17be\u179f\u179a\u17be\u179f\u1799\u1780\u1781\u17c1\u178f\u17d2\u178f\u1798\u17bd\u1799 \u178a\u17c2\u179b\u1798\u17b6\u1793\u179f\u178e\u17d2\u178b\u17b6\u1793\u179f\u17d2\u179a\u178a\u17c0\u1784\u1793\u17b9\u1784\u1797\u1796\u17a2\u1784\u17d2\u1782\u17b6\u179a\xbb \u178a\u17be\u1798\u17d2\u1794\u17b8\u1792\u17d2\u179c\u17be\u1780\u17b6\u179a fb.me/2fCcK8jdh\n', 'created_at': u'Aug 1', 'id': '892367420655935488'}] has insert into redis
+Wed, 11 Oct 2017 19:45:52 scraper.py[line:237] DEBUG Scraped from <200 https://mobile.twitter.com/search?q=%E1%9E%94%E1%9F%92%E1%9E%9A%E1%9E%91%E1%9F%81%E1%9E%9F%E1%9E%85%E1%9E%B7%E1%9E%93&src=typd>
+{'created_at': u'Aug 1',
+ 'id': '892367420655935488',
+ 'text': u'  \u17a2\u179f\u17d2\u1785\u17b6\u179a\u17d2\u1799\u1798\u17c2\u1793! \u1794\u17d2\u179a\u1791\u17c1\u179f\u1785\u17b7\u1793 \xab\u1787\u17d2\u179a\u17be\u179f\u179a\u17be\u179f\u1799\u1780\u1781\u17c1\u178f\u17d2\u178f\u1798\u17bd\u1799 \u178a\u17c2\u179b\u1798\u17b6\u1793\u179f\u178e\u17d2\u178b\u17b6\u1793\u179f\u17d2\u179a\u178a\u17c0\u1784\u1793\u17b9\u1784\u1797\u1796\u17a2\u1784\u17d2\u1782\u17b6\u179a\xbb \u178a\u17be\u1798\u17d2\u1794\u17b8\u1792\u17d2\u179c\u17be\u1780\u17b6\u179a fb.me/2fCcK8jdh\n'}
+Wed, 11 Oct 2017 19:45:52 engine.py[line:238] DEBUG Crawled (200) <GET https://mobile.twitter.com/UrbanVoiceCam?p=s> (referer: https://mobile.twitter.com/search?q=%E1%9E%94%E1%9F%92%E1%9E%9A%E1%9E%91%E1%9F%81%E1%9E%9F%E1%9E%85%E1%9E%B7%E1%9E%93&src=typd)
+Wed, 11 Oct 2017 19:45:52 engine.py[line:238] DEBUG Crawled (200) <GET https://mobile.twitter.com/mrkongto?p=s> (referer: https://mobile.twitter.com/search?q=%E1%9E%94%E1%9F%92%E1%9E%9A%E1%9E%91%E1%9F%81%E1%9E%9F%E1%9E%85%E1%9E%B7%E1%9E%93&src=typd)
+Wed, 11 Oct 2017 19:45:52 engine.py[line:238] DEBUG Crawled (200) <GET https://mobile.twitter.com/wa_whitecaptain?p=s> (referer: https://mobile.twitter.com/search?q=%E1%9E%94%E1%9F%92%E1%9E%9A%E1%9E%91%E1%9F%81%E1%9E%9F%E1%9E%85%E1%9E%B7%E1%9E%93&src=typd)
+Wed, 11 Oct 2017 19:45:52 pipelines.py[line:28] INFO TwitterPipeline.process_item TwitterSocialUser [{'name': u'CambodiaMot', 'url': u'https://mobile.twitter.com/CambodiaMot', 'image': 'https://pbs.twimg.com/profile_images/556645468537503744/rd0X42LS_normal.png', 'nick': u'MOT Cambodia', 'followers': u'23', 'following': u'27', 'id': u'CambodiaMot'}] has insert into redis
+Wed, 11 Oct 2017 19:45:52 scraper.py[line:237] DEBUG Scraped from <200 https://mobile.twitter.com/CambodiaMot?p=s>
+{'followers': u'23',
+ 'following': u'27',
+ 'id': u'CambodiaMot',
+ 'image': 'https://pbs.twimg.com/profile_images/556645468537503744/rd0X42LS_normal.png',
+ 'name': u'CambodiaMot',
+ 'nick': u'MOT Cambodia',
+ 'url': u'https://mobile.twitter.com/CambodiaMot'}
+Wed, 11 Oct 2017 19:45:52 pipelines.py[line:28] INFO TwitterPipeline.process_item TwitterSocialUser [{'name': u'kpt_news', 'url': u'https://mobile.twitter.com/kpt_news', 'image': 'https://pbs.twimg.com/profile_images/772277497878634496/1ueIU_Mm_normal.jpg', 'nick': u'Kampuchea Thmey', 'following': u'47', 'id': u'kpt_news'}] has insert into redis
+Wed, 11 Oct 2017 19:45:52 scraper.py[line:237] DEBUG Scraped from <200 https://mobile.twitter.com/kpt_news?p=s>
+{'following': u'47',
+ 'id': u'kpt_news',
+ 'image': 'https://pbs.twimg.com/profile_images/772277497878634496/1ueIU_Mm_normal.jpg',
+ 'name': u'kpt_news',
+ 'nick': u'Kampuchea Thmey',
+ 'url': u'https://mobile.twitter.com/kpt_news'}
+Wed, 11 Oct 2017 19:45:52 pipelines.py[line:31] INFO TwitterPipeline.process_item TwitterSocialContent [{'text': u' \u1794\u17d2\u179a\u1791\u17c1\u179f\u1785\u17b7\u1793 \u1780\u17c6\u1796\u17bb\u1784\u179f\u17c6\u1789\u17c9\u17c2\u1784\u179f\u17b6\u1785\u17cb\u178a\u17bb\u17c6\u178a\u17b6\u1780\u17cb\u1794\u17d2\u179a\u1791\u17c1\u179f\u17a5\u178e\u17d2\u178c\u17b6\u17d4 \n\u1794\u17be\u179f\u17b7\u1793\u1787\u17b6 \u1785\u17b7\u1793\u1798\u17b6\u1793\u179f\u1784\u17d2\u1782\u17d2\u179a\u17b6\u1798\u1787\u17b6\u1798\u17bd\u1799\u17a5\u178e\u17d2\u178c\u17b6... fb.me/7iKWFq7h2\n', 'created_at': u'Jul 30', 'id': '891667436214341632'}] has insert into redis
+Wed, 11 Oct 2017 19:45:52 scraper.py[line:237] DEBUG Scraped from <200 https://mobile.twitter.com/search?q=%E1%9E%94%E1%9F%92%E1%9E%9A%E1%9E%91%E1%9F%81%E1%9E%9F%E1%9E%85%E1%9E%B7%E1%9E%93&src=typd>
+{'created_at': u'Jul 30',
+ 'id': '891667436214341632',
+ 'text': u' \u1794\u17d2\u179a\u1791\u17c1\u179f\u1785\u17b7\u1793 \u1780\u17c6\u1796\u17bb\u1784\u179f\u17c6\u1789\u17c9\u17c2\u1784\u179f\u17b6\u1785\u17cb\u178a\u17bb\u17c6\u178a\u17b6\u1780\u17cb\u1794\u17d2\u179a\u1791\u17c1\u179f\u17a5\u178e\u17d2\u178c\u17b6\u17d4 \n\u1794\u17be\u179f\u17b7\u1793\u1787\u17b6 \u1785\u17b7\u1793\u1798\u17b6\u1793\u179f\u1784\u17d2\u1782\u17d2\u179a\u17b6\u1798\u1787\u17b6\u1798\u17bd\u1799\u17a5\u178e\u17d2\u178c\u17b6... fb.me/7iKWFq7h2\n'}
+Wed, 11 Oct 2017 19:45:52 engine.py[line:238] DEBUG Crawled (200) <GET https://mobile.twitter.com/RFI_Khmer?p=s> (referer: https://mobile.twitter.com/search?q=%E1%9E%94%E1%9F%92%E1%9E%9A%E1%9E%91%E1%9F%81%E1%9E%9F%E1%9E%85%E1%9E%B7%E1%9E%93&src=typd)
+Wed, 11 Oct 2017 19:45:52 pipelines.py[line:31] INFO TwitterPipeline.process_item TwitterSocialContent [{'text': u'  \u1794\u17d2\u179a\u178f\u17b7\u1797\u17bc\u1796\u17d0\u178f\u17cc\u1798\u17b6\u1793\u1798\u1780\u1796\u17b8\u1780\u1798\u17d2\u1796\u17bb\u1787\u17b6 \u178a\u17b9\u1780\u1793\u17b6\u17c6\u178a\u17c4\u1799\u179b\u17c4\u1780 \u17a2\u17ca\u17bb\u1780 \u1782\u17b8\u1798\u179f\u17c1\u1784 \u17a2\u1793\u17bb\u179a\u178a\u17d2\u178b\u179b\u17c1\u1781\u17b6\u1792\u17b7\u1780\u17b6\u179a\u1780\u17d2\u179a\u179f\u17bd\u1784\u1796\u17d0\u178f\u17cc\u1798\u17b6\u1793\u1780\u17c6\u1796\u17bb\u1784\u1791\u179f\u17d2\u179f\u1793\u1780\u17b7\u1785\u17d2\u1785\u1793\u17c5\u1781\u17c1\u178f\u17d2\u178f\u1780\u17d2\u179c\u17b6\u1784\u179f\u17ca\u17b8 \u1794\u17d2\u179a\u1791\u17c1\u179f\u1785\u17b7\u1793\u17d4\n', 'created_at': u'Jul 25', 'id': '890031258457300993'}] has insert into redis
+Wed, 11 Oct 2017 19:45:52 scraper.py[line:237] DEBUG Scraped from <200 https://mobile.twitter.com/search?q=%E1%9E%94%E1%9F%92%E1%9E%9A%E1%9E%91%E1%9F%81%E1%9E%9F%E1%9E%85%E1%9E%B7%E1%9E%93&src=typd>
+{'created_at': u'Jul 25',
+ 'id': '890031258457300993',
+ 'text': u'  \u1794\u17d2\u179a\u178f\u17b7\u1797\u17bc\u1796\u17d0\u178f\u17cc\u1798\u17b6\u1793\u1798\u1780\u1796\u17b8\u1780\u1798\u17d2\u1796\u17bb\u1787\u17b6 \u178a\u17b9\u1780\u1793\u17b6\u17c6\u178a\u17c4\u1799\u179b\u17c4\u1780 \u17a2\u17ca\u17bb\u1780 \u1782\u17b8\u1798\u179f\u17c1\u1784 \u17a2\u1793\u17bb\u179a\u178a\u17d2\u178b\u179b\u17c1\u1781\u17b6\u1792\u17b7\u1780\u17b6\u179a\u1780\u17d2\u179a\u179f\u17bd\u1784\u1796\u17d0\u178f\u17cc\u1798\u17b6\u1793\u1780\u17c6\u1796\u17bb\u1784\u1791\u179f\u17d2\u179f\u1793\u1780\u17b7\u1785\u17d2\u1785\u1793\u17c5\u1781\u17c1\u178f\u17d2\u178f\u1780\u17d2\u179c\u17b6\u1784\u179f\u17ca\u17b8 \u1794\u17d2\u179a\u1791\u17c1\u179f\u1785\u17b7\u1793\u17d4\n'}
+Wed, 11 Oct 2017 19:45:53 pipelines.py[line:28] INFO TwitterPipeline.process_item TwitterSocialUser [{'name': u'UrbanVoiceCam', 'url': u'https://mobile.twitter.com/UrbanVoiceCam', 'image': 'https://pbs.twimg.com/profile_images/687553449878134784/_-IYM0Mg_normal.jpg', 'nick': u'Urban Voice Cambodia', 'following': u'235', 'id': u'UrbanVoiceCam'}] has insert into redis
+Wed, 11 Oct 2017 19:45:53 scraper.py[line:237] DEBUG Scraped from <200 https://mobile.twitter.com/UrbanVoiceCam?p=s>
+{'following': u'235',
+ 'id': u'UrbanVoiceCam',
+ 'image': 'https://pbs.twimg.com/profile_images/687553449878134784/_-IYM0Mg_normal.jpg',
+ 'name': u'UrbanVoiceCam',
+ 'nick': u'Urban Voice Cambodia',
+ 'url': u'https://mobile.twitter.com/UrbanVoiceCam'}
+Wed, 11 Oct 2017 19:45:53 pipelines.py[line:28] INFO TwitterPipeline.process_item TwitterSocialUser [{'status': u'550', 'name': u'mrkongto', 'url': u'https://mobile.twitter.com/mrkongto', 'image': 'https://pbs.twimg.com/profile_images/794693806285172736/J__BjpQl_normal.jpg', 'nick': u'To Kong', 'followers': u'8', 'following': u'28', 'id': u'mrkongto'}] has insert into redis
+Wed, 11 Oct 2017 19:45:53 scraper.py[line:237] DEBUG Scraped from <200 https://mobile.twitter.com/mrkongto?p=s>
+{'followers': u'8',
+ 'following': u'28',
+ 'id': u'mrkongto',
+ 'image': 'https://pbs.twimg.com/profile_images/794693806285172736/J__BjpQl_normal.jpg',
+ 'name': u'mrkongto',
+ 'nick': u'To Kong',
+ 'status': u'550',
+ 'url': u'https://mobile.twitter.com/mrkongto'}
+Wed, 11 Oct 2017 19:45:53 pipelines.py[line:28] INFO TwitterPipeline.process_item TwitterSocialUser [{'status': u'613', 'name': u'wa_whitecaptain', 'url': u'https://mobile.twitter.com/wa_whitecaptain', 'image': 'https://pbs.twimg.com/profile_images/834470280672190464/8qCHTSZY_normal.jpg', 'nick': u'\u5b89\u82e5\u4f50', 'followers': u'0', 'following': u'53', 'id': u'wa_whitecaptain'}] has insert into redis
+Wed, 11 Oct 2017 19:45:53 scraper.py[line:237] DEBUG Scraped from <200 https://mobile.twitter.com/wa_whitecaptain?p=s>
+{'followers': u'0',
+ 'following': u'53',
+ 'id': u'wa_whitecaptain',
+ 'image': 'https://pbs.twimg.com/profile_images/834470280672190464/8qCHTSZY_normal.jpg',
+ 'name': u'wa_whitecaptain',
+ 'nick': u'\u5b89\u82e5\u4f50',
+ 'status': u'613',
+ 'url': u'https://mobile.twitter.com/wa_whitecaptain'}
+Wed, 11 Oct 2017 19:45:53 pipelines.py[line:31] INFO TwitterPipeline.process_item TwitterSocialContent [{'text': u'  Cristiano Ronaldo \u1780\u17c6\u1796\u17bb\u1784\u1793\u17c5\u1791\u17b8\u1780\u17d2\u179a\u17bb\u1784 \u179f\u17c0\u1784\u17a0\u17c3 \u1794\u17d2\u179a\u1791\u17c1\u179f\u1785\u17b7\u1793 \U0001f1e8\U0001f1f3\n#R7 fb.me/8FdYuTtqI\n', 'created_at': u'Jul 22', 'id': '888946388758933505'}] has insert into redis
+Wed, 11 Oct 2017 19:45:53 scraper.py[line:237] DEBUG Scraped from <200 https://mobile.twitter.com/search?q=%E1%9E%94%E1%9F%92%E1%9E%9A%E1%9E%91%E1%9F%81%E1%9E%9F%E1%9E%85%E1%9E%B7%E1%9E%93&src=typd>
+{'created_at': u'Jul 22',
+ 'id': '888946388758933505',
+ 'text': u'  Cristiano Ronaldo \u1780\u17c6\u1796\u17bb\u1784\u1793\u17c5\u1791\u17b8\u1780\u17d2\u179a\u17bb\u1784 \u179f\u17c0\u1784\u17a0\u17c3 \u1794\u17d2\u179a\u1791\u17c1\u179f\u1785\u17b7\u1793 \U0001f1e8\U0001f1f3\n#R7 fb.me/8FdYuTtqI\n'}
+Wed, 11 Oct 2017 19:45:53 engine.py[line:238] DEBUG Crawled (200) <GET https://mobile.twitter.com/hiroth250?p=s> (referer: https://mobile.twitter.com/search?q=%E1%9E%94%E1%9F%92%E1%9E%9A%E1%9E%91%E1%9F%81%E1%9E%9F%E1%9E%85%E1%9E%B7%E1%9E%93&src=typd)
+Wed, 11 Oct 2017 19:45:53 engine.py[line:238] DEBUG Crawled (200) <GET https://mobile.twitter.com/Kuochkimseng1?p=s> (referer: https://mobile.twitter.com/search?q=%E1%9E%94%E1%9F%92%E1%9E%9A%E1%9E%91%E1%9F%81%E1%9E%9F%E1%9E%85%E1%9E%B7%E1%9E%93&src=typd)
+Wed, 11 Oct 2017 19:45:53 engine.py[line:238] DEBUG Crawled (200) <GET https://mobile.twitter.com/HongSokHour?p=s> (referer: https://mobile.twitter.com/search?q=%E1%9E%94%E1%9F%92%E1%9E%9A%E1%9E%91%E1%9F%81%E1%9E%9F%E1%9E%85%E1%9E%B7%E1%9E%93&src=typd)
+Wed, 11 Oct 2017 19:45:53 pipelines.py[line:28] INFO TwitterPipeline.process_item TwitterSocialUser [{'name': u'RFI_Khmer', 'url': u'https://mobile.twitter.com/RFI_Khmer', 'image': 'https://pbs.twimg.com/profile_images/875657623650975744/v9POhGdd_normal.jpg', 'nick': u'RFI \u1781\u17c1\u1798\u179a\u1797\u17b6\u179f\u17b6 / Khmer', 'following': u'20', 'id': u'RFI_Khmer'}] has insert into redis
+Wed, 11 Oct 2017 19:45:53 scraper.py[line:237] DEBUG Scraped from <200 https://mobile.twitter.com/RFI_Khmer?p=s>
+{'following': u'20',
+ 'id': u'RFI_Khmer',
+ 'image': 'https://pbs.twimg.com/profile_images/875657623650975744/v9POhGdd_normal.jpg',
+ 'name': u'RFI_Khmer',
+ 'nick': u'RFI \u1781\u17c1\u1798\u179a\u1797\u17b6\u179f\u17b6 / Khmer',
+ 'url': u'https://mobile.twitter.com/RFI_Khmer'}
+Wed, 11 Oct 2017 19:45:54 pipelines.py[line:28] INFO TwitterPipeline.process_item TwitterSocialUser [{'name': u'hiroth250', 'url': u'https://mobile.twitter.com/hiroth250', 'image': 'https://pbs.twimg.com/profile_images/2321977054/image_normal.jpg', 'nick': u'hiroth250', 'followers': u'15', 'following': u'193', 'id': u'hiroth250'}] has insert into redis
+Wed, 11 Oct 2017 19:45:54 scraper.py[line:237] DEBUG Scraped from <200 https://mobile.twitter.com/hiroth250?p=s>
+{'followers': u'15',
+ 'following': u'193',
+ 'id': u'hiroth250',
+ 'image': 'https://pbs.twimg.com/profile_images/2321977054/image_normal.jpg',
+ 'name': u'hiroth250',
+ 'nick': u'hiroth250',
+ 'url': u'https://mobile.twitter.com/hiroth250'}
+Wed, 11 Oct 2017 19:45:54 pipelines.py[line:28] INFO TwitterPipeline.process_item TwitterSocialUser [{'status': u'870', 'name': u'Kuochkimseng1', 'url': u'https://mobile.twitter.com/Kuochkimseng1', 'image': 'https://pbs.twimg.com/profile_images/798024960400760832/DBWjuZtx_normal.jpg', 'nick': u'K\xfc\xf8ch K\xefm S\xeb\xf1g', 'followers': u'8', 'following': u'123', 'id': u'Kuochkimseng1'}] has insert into redis
+Wed, 11 Oct 2017 19:45:54 scraper.py[line:237] DEBUG Scraped from <200 https://mobile.twitter.com/Kuochkimseng1?p=s>
+{'followers': u'8',
+ 'following': u'123',
+ 'id': u'Kuochkimseng1',
+ 'image': 'https://pbs.twimg.com/profile_images/798024960400760832/DBWjuZtx_normal.jpg',
+ 'name': u'Kuochkimseng1',
+ 'nick': u'K\xfc\xf8ch K\xefm S\xeb\xf1g',
+ 'status': u'870',
+ 'url': u'https://mobile.twitter.com/Kuochkimseng1'}
+Wed, 11 Oct 2017 19:45:54 pipelines.py[line:28] INFO TwitterPipeline.process_item TwitterSocialUser [{'status': u'874', 'name': u'HongSokHour', 'url': u'https://mobile.twitter.com/HongSokHour', 'image': 'https://pbs.twimg.com/profile_images/567700704765042689/wjFS90sJ_normal.jpeg', 'nick': u'Hong, Sok-Hour', 'followers': u'35', 'following': u'11', 'id': u'HongSokHour'}] has insert into redis
+Wed, 11 Oct 2017 19:45:54 scraper.py[line:237] DEBUG Scraped from <200 https://mobile.twitter.com/HongSokHour?p=s>
+{'followers': u'35',
+ 'following': u'11',
+ 'id': u'HongSokHour',
+ 'image': 'https://pbs.twimg.com/profile_images/567700704765042689/wjFS90sJ_normal.jpeg',
+ 'name': u'HongSokHour',
+ 'nick': u'Hong, Sok-Hour',
+ 'status': u'874',
+ 'url': u'https://mobile.twitter.com/HongSokHour'}
+Wed, 11 Oct 2017 19:45:54 engine.py[line:238] DEBUG Crawled (200) <GET https://mobile.twitter.com/BoranadoCambia?p=s> (referer: https://mobile.twitter.com/search?q=%E1%9E%94%E1%9F%92%E1%9E%9A%E1%9E%91%E1%9F%81%E1%9E%9F%E1%9E%85%E1%9E%B7%E1%9E%93&src=typd)
+Wed, 11 Oct 2017 19:45:54 engine.py[line:238] DEBUG Crawled (200) <GET https://mobile.twitter.com/pressocm?p=s> (referer: https://mobile.twitter.com/search?q=%E1%9E%94%E1%9F%92%E1%9E%9A%E1%9E%91%E1%9F%81%E1%9E%9F%E1%9E%85%E1%9E%B7%E1%9E%93&src=typd)
+Wed, 11 Oct 2017 19:45:54 engine.py[line:238] DEBUG Crawled (200) <GET https://mobile.twitter.com/meassokpanha1?p=s> (referer: https://mobile.twitter.com/search?q=%E1%9E%94%E1%9F%92%E1%9E%9A%E1%9E%91%E1%9F%81%E1%9E%9F%E1%9E%85%E1%9E%B7%E1%9E%93&src=typd)
+Wed, 11 Oct 2017 19:45:54 engine.py[line:238] DEBUG Crawled (200) <GET https://mobile.twitter.com/Sotheara_Law?p=s> (referer: https://mobile.twitter.com/search?q=%E1%9E%94%E1%9F%92%E1%9E%9A%E1%9E%91%E1%9F%81%E1%9E%9F%E1%9E%85%E1%9E%B7%E1%9E%93&src=typd)
+Wed, 11 Oct 2017 19:45:55 pipelines.py[line:28] INFO TwitterPipeline.process_item TwitterSocialUser [{'name': u'BoranadoCambia', 'url': u'https://mobile.twitter.com/BoranadoCambia', 'image': 'https://pbs.twimg.com/profile_images/890083677966872576/c4_mfJDf_normal.jpg', 'nick': u'Boranado Cambia', 'followers': u'420', 'id': u'BoranadoCambia'}] has insert into redis
+Wed, 11 Oct 2017 19:45:55 scraper.py[line:237] DEBUG Scraped from <200 https://mobile.twitter.com/BoranadoCambia?p=s>
+{'followers': u'420',
+ 'id': u'BoranadoCambia',
+ 'image': 'https://pbs.twimg.com/profile_images/890083677966872576/c4_mfJDf_normal.jpg',
+ 'name': u'BoranadoCambia',
+ 'nick': u'Boranado Cambia',
+ 'url': u'https://mobile.twitter.com/BoranadoCambia'}
+Wed, 11 Oct 2017 19:45:55 pipelines.py[line:28] INFO TwitterPipeline.process_item TwitterSocialUser [{'url': u'https://mobile.twitter.com/pressocm', 'nick': u'PRESS OCM', 'image': 'https://pbs.twimg.com/profile_images/846667761648484352/WErLFNPw_normal.jpg', 'id': u'pressocm', 'name': u'pressocm'}] has insert into redis
+Wed, 11 Oct 2017 19:45:55 scraper.py[line:237] DEBUG Scraped from <200 https://mobile.twitter.com/pressocm?p=s>
+{'id': u'pressocm',
+ 'image': 'https://pbs.twimg.com/profile_images/846667761648484352/WErLFNPw_normal.jpg',
+ 'name': u'pressocm',
+ 'nick': u'PRESS OCM',
+ 'url': u'https://mobile.twitter.com/pressocm'}
+Wed, 11 Oct 2017 19:45:55 pipelines.py[line:28] INFO TwitterPipeline.process_item TwitterSocialUser [{'name': u'meassokpanha1', 'url': u'https://mobile.twitter.com/meassokpanha1', 'image': 'https://pbs.twimg.com/profile_images/829290896571121665/ytvZBYFS_normal.jpg', 'nick': u'ZTV CAMBODIA', 'followers': u'7', 'following': u'53', 'id': u'meassokpanha1'}] has insert into redis
+Wed, 11 Oct 2017 19:45:55 scraper.py[line:237] DEBUG Scraped from <200 https://mobile.twitter.com/meassokpanha1?p=s>
+{'followers': u'7',
+ 'following': u'53',
+ 'id': u'meassokpanha1',
+ 'image': 'https://pbs.twimg.com/profile_images/829290896571121665/ytvZBYFS_normal.jpg',
+ 'name': u'meassokpanha1',
+ 'nick': u'ZTV CAMBODIA',
+ 'url': u'https://mobile.twitter.com/meassokpanha1'}
+Wed, 11 Oct 2017 19:45:55 pipelines.py[line:28] INFO TwitterPipeline.process_item TwitterSocialUser [{'url': u'https://mobile.twitter.com/Sotheara_Law', 'nick': u'Sotheara Yoeurng', 'image': 'https://pbs.twimg.com/profile_images/716224907206483968/mS2iC1BI_normal.jpg', 'id': u'Sotheara_Law', 'name': u'Sotheara_Law'}] has insert into redis
+Wed, 11 Oct 2017 19:45:55 scraper.py[line:237] DEBUG Scraped from <200 https://mobile.twitter.com/Sotheara_Law?p=s>
+{'id': u'Sotheara_Law',
+ 'image': 'https://pbs.twimg.com/profile_images/716224907206483968/mS2iC1BI_normal.jpg',
+ 'name': u'Sotheara_Law',
+ 'nick': u'Sotheara Yoeurng',
+ 'url': u'https://mobile.twitter.com/Sotheara_Law'}
+Wed, 11 Oct 2017 19:45:55 engine.py[line:295] INFO Closing spider (finished)
+Wed, 11 Oct 2017 19:45:55 statscollectors.py[line:47] INFO Dumping Scrapy stats:
+{'downloader/request_bytes': 20972,
+ 'downloader/request_count': 21,
+ 'downloader/request_method_count/GET': 21,
+ 'downloader/response_bytes': 205987,
+ 'downloader/response_count': 21,
+ 'downloader/response_status_count/200': 21,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2017, 10, 11, 11, 45, 55, 703000),
+ 'item_scraped_count': 40,
+ 'log_count/DEBUG': 62,
+ 'log_count/INFO': 48,
+ 'log_count/WARNING': 1,
+ 'request_depth_max': 1,
+ 'response_received_count': 21,
+ 'scheduler/dequeued': 21,
+ 'scheduler/dequeued/memory': 21,
+ 'scheduler/enqueued': 21,
+ 'scheduler/enqueued/memory': 21,
+ 'start_time': datetime.datetime(2017, 10, 11, 11, 44, 42, 676000)}
+Wed, 11 Oct 2017 19:45:55 engine.py[line:326] INFO Spider closed (finished)
