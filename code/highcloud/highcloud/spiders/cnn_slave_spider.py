@@ -6,10 +6,10 @@ from highcloud.items import CnnSocialContent,CnnSocialUser
 from highcloud.scrapy_redis.spiders import RedisSpider
 
 
-class CnnSlaveSpider(RedisSpider):
-    name = 'CnnSlaveSpider'
+class CnnSubordinateSpider(RedisSpider):
+    name = 'CnnSubordinateSpider'
     allowed_domains = ['edition.cnn.com']
-    master_name = 'CnnMasterSpider'
+    main_name = 'CnnMainSpider'
 
     custom_settings = {
         'ROBOTSTXT_OBEY' : False,
@@ -27,10 +27,10 @@ class CnnSlaveSpider(RedisSpider):
 
 
     def __init__(self, task_id='task_id', *args, **kwargs):
-        super(CnnSlaveSpider, self).__init__(*args, **kwargs)
+        super(CnnSubordinateSpider, self).__init__(*args, **kwargs)
 
         self.task_id=task_id
-        self.redis_key=self.master_name+':'+task_id+':start_urls'
+        self.redis_key=self.main_name+':'+task_id+':start_urls'
 
 
     def getUserName(self,name):

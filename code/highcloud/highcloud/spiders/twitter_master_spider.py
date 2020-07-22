@@ -13,7 +13,7 @@ from highcloud.utils.utils_redis import RedisUtils
 from highcloud.items import TwitterSocialUser
 
 class Spider(scrapy.Spider):
-    name = 'TwitterMasterSpider'
+    name = 'TwitterMainSpider'
     allowed_domains = ['www.twitter.com']
     start_urls = [
             'https://www.twitter.com',
@@ -69,6 +69,6 @@ class Spider(scrapy.Spider):
                 logging.warning('[%s] no content' % self.user_site)
 
         except:
-            logging.error('twitter_master_spider.Spider.parse_contents Exception has occur %s' % str(sys.exc_info()[1]))
+            logging.error('twitter_main_spider.Spider.parse_contents Exception has occur %s' % str(sys.exc_info()[1]))
         finally:
             pass

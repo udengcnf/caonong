@@ -135,10 +135,10 @@ class SpiderTask(object):
                     search_taskinfo.user_id = user_id
                     search_taskinfo.source_id = available_source
                     search_taskinfo.task_status = 0
-                    search_taskinfo.master_ip = []
-                    search_taskinfo.slave_ip = []
-                    search_taskinfo.master_job = []
-                    search_taskinfo.slave_job = []
+                    search_taskinfo.main_ip = []
+                    search_taskinfo.subordinate_ip = []
+                    search_taskinfo.main_job = []
+                    search_taskinfo.subordinate_job = []
                     search_taskinfo.search_type = search_type
                     search_taskinfo.search_content = search_content
                     search_taskinfo.content_count = content_count
@@ -295,7 +295,7 @@ class SpiderTask(object):
                 print ' ===========================  I am a runing spider ===========================  ', search_taskinfo.id
                 task_search_ret = RedisUtils.model_query(search_taskinfo)
                 source_id = eval(task_search_ret.get('source_id'))
-                slave_job = eval(task_search_ret.get('slave_job'))
+                subordinate_job = eval(task_search_ret.get('subordinate_job'))
 
                 ## 查询可用网站名称如Sina、Twitter
                 search_sites = []
@@ -310,7 +310,7 @@ class SpiderTask(object):
                     result['error_info'] = 'SpiderTask.start_task run_spider task:%s no available sites' % search_taskinfo.id
                     return
 
-                master_data = {
+                main_data = {
                     'task_id':search_taskinfo.id, ## 任务id
                     'sites': search_sites, ## 可用网站列表
                     'listen_id': task_search_ret.get('listen_id'), ## 监听用户的ID
@@ -318,26 +318,26 @@ class SpiderTask(object):
                     'max_count':task_search_ret.get('content_count', 50), ## 主爬虫content数
                 }
                 ## 启动主爬虫
-                master_ret = Spiders.start_master_spider(master_data)
-                if master_ret['code'] == -1:
-                    logging.error('SpiderTask.start_task run_spider task:%s start master spider failed %s' % (search_taskinfo.id, master_ret['error_info']))
-                    result['error_info'] = 'SpiderTask.start_task run_spider task:%s start master spider failed %s' % (search_taskinfo.id, master_ret['error_info'])
+                main_ret = Spiders.start_main_spider(main_data)
+                if main_ret['code'] == -1:
+                    logging.error('SpiderTask.start_task run_spider task:%s start main spider failed %s' % (search_taskinfo.id, main_ret['error_info']))
+                    result['error_info'] = 'SpiderTask.start_task run_spider task:%s start main spider failed %s' % (search_taskinfo.id, main_ret['error_info'])
                     return
-                logging.info('SpiderTask.start_task run_spider task:%s start master spider success' % (search_taskinfo.id))
+                logging.info('SpiderTask.start_task run_spider task:%s start main spider success' % (search_taskinfo.id))
 
-                slave_data = {
+                subordinate_data = {
                     'task_id':search_taskinfo.id, ## 任务id
                     'sites': search_sites, ## 可用网站列表
                 }
                 ## 启动从爬虫(最多启动4个从爬虫)
-                if len(slave_job) < 4:
+                if len(subordinate_job) < 4:
                     for i in range(3):
-                        slave_ret = Spiders.start_slave_spider(slave_data)
-                        if slave_ret['code'] == -1:
-                            logging.error('SpiderTask.start_task run_spider task:%s start slave spider failed %s' % (search_taskinfo.id, slave_ret['error_info']))
-                            result['error_info'] = 'SpiderTask.start_task run_spider task:%s start slave spider failed %s' % (search_taskinfo.id, slave_ret['error_info'])
+                        subordinate_ret = Spiders.start_subordinate_spider(subordinate_data)
+                        if subordinate_ret['code'] == -1:
+                            logging.error('SpiderTask.start_task run_spider task:%s start subordinate spider failed %s' % (search_taskinfo.id, subordinate_ret['error_info']))
+                            result['error_info'] = 'SpiderTask.start_task run_spider task:%s start subordinate spider failed %s' % (search_taskinfo.id, subordinate_ret['error_info'])
                             return
-                        logging.info('SpiderTask.start_task run_spider task:%s start slave spider [%s] success' % (search_taskinfo.id, i))
+                        logging.info('SpiderTask.start_task run_spider task:%s start subordinate spider [%s] success' % (search_taskinfo.id, i))
 
                 ## 检测停止
                 for i in range(update_time/stop_check):
@@ -347,10 +347,10 @@ class SpiderTask(object):
                     ## 若任务状态为正在停止
                     if task_status == 4:
                         ## 停止主爬虫
-                        Spiders.stop_master_spider({'task_id':search_taskinfo.id})
+                        Spiders.stop_main_spider({'task_id':search_taskinfo.id})
                         time.sleep(1)
                         ## 停止从爬虫
-                        Spiders.stop_slave_spider({'task_id':search_taskinfo.id})
+                        Spiders.stop_subordinate_spider({'task_id':search_taskinfo.id})
                         time.sleep(1)
                         ## 清空爬虫队列
                         Spiders.clean_spider_queue({'task_id':search_taskinfo.id, 'sites': search_sites})

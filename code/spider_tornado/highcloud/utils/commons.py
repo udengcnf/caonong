@@ -95,8 +95,8 @@ class Utils(object):
             c.id = 1
             res = RedisUtils.model_query(c)
             result['interval'] = eval(res.get('interval', '300'))
-            result['master_ip'] = eval(res.get('master_ip'))
-            result['slave_ip'] = eval(res.get('slave_ip'))
+            result['main_ip'] = eval(res.get('main_ip'))
+            result['subordinate_ip'] = eval(res.get('subordinate_ip'))
             result['port'] = res.get('port', '6800')
 
         except Exception as e:
@@ -112,16 +112,16 @@ class Utils(object):
 
             cfg = cls.get_spider_config()
             ## redis config
-            master_ip = random.choice(cfg.get('master_ip'))
-            slave_ip = random.choice(cfg.get('slave_ip'))
+            main_ip = random.choice(cfg.get('main_ip'))
+            subordinate_ip = random.choice(cfg.get('subordinate_ip'))
             port = cfg.get('port')
             ## spider params
             project = params.get('project', 'default')
-            spider = params.get('spider', 'TwitterMasterSpider')
+            spider = params.get('spider', 'TwitterMainSpider')
             search_word = params.get('search_word', '中国')
             task_id = params.get('task_id', 'task_id')
 
-            host = master_ip if 'Master' in spider else slave_ip
+            host = main_ip if 'Main' in spider else subordinate_ip
             url = 'http://%s:%s/schedule.json' % (host, port)
             data = {
                 'project':project,
@@ -200,4 +200,4 @@ if __name__ == '__main__':
     print Utils.get_spider_config()
     # print Utils.twitter_time2stamp('6:17 PM - 4 Jun 2017')
     Utils.result_redis2mongo()
-    # print Utils.post('http://52.184.38.232:6800/schedule.json', {'project': 'highcloud', 'search_word': '12', 'spider': 'TwitterMasterSpider', 'task_id': '0824d499-d5d6-4698-a7ca-35a524fb4c18', 'max_count': '5'})
+    # print Utils.post('http://52.184.38.232:6800/schedule.json', {'project': 'highcloud', 'search_word': '12', 'spider': 'TwitterMainSpider', 'task_id': '0824d499-d5d6-4698-a7ca-35a524fb4c18', 'max_count': '5'})
