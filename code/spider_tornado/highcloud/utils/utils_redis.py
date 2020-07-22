@@ -170,8 +170,8 @@ if __name__ == '__main__':
     # c.id = 1
     # c.interval = 1800
     # c.port = 6800
-    # c.master_ip = ['52.184.38.232']
-    # c.slave_ip = ['52.184.38.232']
+    # c.main_ip = ['52.184.38.232']
+    # c.subordinate_ip = ['52.184.38.232']
     # RedisUtils.model_insert(c)
 
     a = RedisUtils.item_list('TwitterSocialContent', 2)

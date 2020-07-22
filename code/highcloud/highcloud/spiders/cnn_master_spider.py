@@ -4,8 +4,8 @@ import sys
 import logging
 from highcloud.utils.utils_redis import RedisUtils
 
-class CnnMasterSpider(scrapy.Spider):
-    name = 'CnnMasterSpider'
+class CnnMainSpider(scrapy.Spider):
+    name = 'CnnMainSpider'
     allowed_domains = ['edition.cnn.com']
     size='1'
     status_count = 0
@@ -13,7 +13,7 @@ class CnnMasterSpider(scrapy.Spider):
     def __init__(self, search_word='China', *args, **kwargs):
         # print 'kkkkkkkkkk===',search_word
 
-        super(CnnMasterSpider, self).__init__(*args, **kwargs)
+        super(CnnMainSpider, self).__init__(*args, **kwargs)
 
         # self.search_word = kwargs.get('search_word',  'លោកអូបាម៉ា') ## 'លោកអូបាម៉ា'
         self.task_id = kwargs.get('task_id',  'task_id')
@@ -46,6 +46,6 @@ class CnnMasterSpider(scrapy.Spider):
 
         except Exception as e:
             print 'exception:',e
-            logging.error('cnn_master Exception has occur %s' % str(sys.exc_info()[1]))
+            logging.error('cnn_main Exception has occur %s' % str(sys.exc_info()[1]))
         finally:
             pass

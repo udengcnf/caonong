@@ -18,13 +18,13 @@ class TaskInfo():
         #内容数量(主爬虫content数)
         self.content_count = {}
         #主爬虫ip列表
-        self.master_ip = {}
+        self.main_ip = {}
         #从爬虫ip列表
-        self.slave_ip = {}
+        self.subordinate_ip = {}
         #主爬虫job_id列表
-        self.master_job = {}
+        self.main_job = {}
         #从爬虫job_id列表
-        self.slave_job = {}
+        self.subordinate_job = {}
         #来源ID(列表)
         self.source_id = {}
         #任务状态(0/已创建, 1/正在执行, 2/已停止, 3/已完成, 4/执行失败, 5/已删除)

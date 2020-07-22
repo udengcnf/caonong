@@ -8,9 +8,9 @@ class SpiderConfig():
         #主爬虫运行间隔/s
         self.interval = {}
         #主爬虫ip列表
-        self.master_ip = {}
+        self.main_ip = {}
         #从爬虫ip列表
-        self.slave_ip = {}
+        self.subordinate_ip = {}
         #scrapyd端口
         self.port = {}
 

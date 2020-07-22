@@ -24,8 +24,8 @@ class Spiders(object):
             c.id = 1
             res = RedisUtils.model_query(c)
             result['interval'] = eval(res.get('interval', '300'))
-            result['master_ip'] = eval(res.get('master_ip'))
-            result['slave_ip'] = eval(res.get('slave_ip'))
+            result['main_ip'] = eval(res.get('main_ip'))
+            result['subordinate_ip'] = eval(res.get('subordinate_ip'))
             result['port'] = res.get('port', '6800')
 
         except Exception as e:
@@ -34,14 +34,14 @@ class Spiders(object):
             return result
 
     @classmethod
-    def start_master_spider(cls, params):
+    def start_main_spider(cls, params):
         try:
             retcode = -1
             result = {'code':retcode}
 
             cfg = cls.get_spider_config()
             ## redis config
-            m_ip = random.choice(cfg.get('master_ip'))
+            m_ip = random.choice(cfg.get('main_ip'))
             port = cfg.get('port')
             ## spider params
             project = params.get('project', 'highcloud')
@@ -61,7 +61,7 @@ class Spiders(object):
             ## 依次启动各个网站的主爬虫
             success = False
             for site in sites:
-                data['spider'] = site + 'MasterSpider'
+                data['spider'] = site + 'MainSpider'
                 ## 通过scrapyd提供的接口启动spider
                 ret = Utils.post(url, data)
                 logging.info('commons.Utils.start_spider task:%s result:%s' % (task_id, ret))
@@ -74,31 +74,31 @@ class Spiders(object):
                         continue
 
                     ## 更新主爬虫jobid列表
-                    master_job = eval(RedisUtils.model_query(runing_task).get('master_job'))
-                    if master_job != [] and ret['result']['jobid'] not in master_job:
-                        master_job.append(ret['result']['jobid'])
+                    main_job = eval(RedisUtils.model_query(runing_task).get('main_job'))
+                    if main_job != [] and ret['result']['jobid'] not in main_job:
+                        main_job.append(ret['result']['jobid'])
                     else:
-                        master_job = [ret['result']['jobid']]
+                        main_job = [ret['result']['jobid']]
 
                     ## 更新主爬虫ip列表
-                    master_ip = eval(RedisUtils.model_query(runing_task).get('master_ip'))
-                    if master_ip != [] and m_ip not in master_ip:
-                        master_ip.append(m_ip)
+                    main_ip = eval(RedisUtils.model_query(runing_task).get('main_ip'))
+                    if main_ip != [] and m_ip not in main_ip:
+                        main_ip.append(m_ip)
                     else:
-                        master_ip = [m_ip]
+                        main_ip = [m_ip]
 
                     ## 更新数据库
-                    if not RedisUtils.model_update(runing_task, {'master_job':master_job, 'master_ip':master_ip}):
-                        logging.error('commons.Utils.start_spider task:%s update master_job:%s master_ip:%s failed' % (task_id, master_job, master_ip))
+                    if not RedisUtils.model_update(runing_task, {'main_job':main_job, 'main_ip':main_ip}):
+                        logging.error('commons.Utils.start_spider task:%s update main_job:%s main_ip:%s failed' % (task_id, main_job, main_ip))
                         continue
 
                     success = True
-                    logging.info('commons.Utils.start_spider %s master spider run success' % site)
+                    logging.info('commons.Utils.start_spider %s main spider run success' % site)
 
             if not success:
                 retcode = -1
-                logging.error('commons.Utils.start_spider all site [%s] master spider run failed' % ','.join(sites))
-                result['error_info'] = 'all site %s spider master run failed' % ','.join(sites)
+                logging.error('commons.Utils.start_spider all site [%s] main spider run failed' % ','.join(sites))
+                result['error_info'] = 'all site %s spider main run failed' % ','.join(sites)
                 return
             retcode = 1
         except Exception as e:
@@ -110,14 +110,14 @@ class Spiders(object):
             return result
 
     @classmethod
-    def start_slave_spider(cls, params):
+    def start_subordinate_spider(cls, params):
         try:
             retcode = -1
             result = {'code':retcode}
 
             cfg = cls.get_spider_config()
             ## redis config
-            s_ip = random.choice(cfg.get('slave_ip'))
+            s_ip = random.choice(cfg.get('subordinate_ip'))
             port = cfg.get('port')
             ## spider params
             project = params.get('project', 'highcloud')
@@ -134,7 +134,7 @@ class Spiders(object):
             ## 依次启动各个网站的从爬虫
             success = False
             for site in sites:
-                data['spider'] = site + 'SlaveSpider'
+                data['spider'] = site + 'SubordinateSpider'
                 ## 通过scrapyd提供的接口调用spider
                 ret = Utils.post(url, data)
                 logging.info('commons.Utils.start_spider task:%s result:%s' % (task_id, ret))
@@ -147,31 +147,31 @@ class Spiders(object):
                         continue
 
                     ## 更新从爬虫jobid列表
-                    slave_job = eval(RedisUtils.model_query(runing_task).get('slave_job'))
-                    if slave_job != [] and ret['result']['jobid'] not in slave_job:
-                        slave_job.append(ret['result']['jobid'])
+                    subordinate_job = eval(RedisUtils.model_query(runing_task).get('subordinate_job'))
+                    if subordinate_job != [] and ret['result']['jobid'] not in subordinate_job:
+                        subordinate_job.append(ret['result']['jobid'])
                     else:
-                        slave_job = [ret['result']['jobid']]
+                        subordinate_job = [ret['result']['jobid']]
 
                     ## 更新从爬虫ip列表
-                    slave_ip = eval(RedisUtils.model_query(runing_task).get('slave_ip'))
-                    if slave_ip != [] and s_ip not in slave_ip:
-                        slave_ip.append(s_ip)
+                    subordinate_ip = eval(RedisUtils.model_query(runing_task).get('subordinate_ip'))
+                    if subordinate_ip != [] and s_ip not in subordinate_ip:
+                        subordinate_ip.append(s_ip)
                     else:
-                        slave_ip = [s_ip]
+                        subordinate_ip = [s_ip]
 
                     ## 更新数据库
-                    if not RedisUtils.model_update(runing_task, {'slave_job':slave_job, 'slave_ip':slave_ip}):
-                        logging.error('commons.Utils.start_spider task:%s update slave_job:%s  slave_ip:%s failed' % (task_id, slave_job, slave_ip))
+                    if not RedisUtils.model_update(runing_task, {'subordinate_job':subordinate_job, 'subordinate_ip':subordinate_ip}):
+                        logging.error('commons.Utils.start_spider task:%s update subordinate_job:%s  subordinate_ip:%s failed' % (task_id, subordinate_job, subordinate_ip))
                         continue
 
                     success = True
-                    logging.info('commons.Utils.start_spider %s slave spider run success' % site)
+                    logging.info('commons.Utils.start_spider %s subordinate spider run success' % site)
 
             if not success:
                 retcode = -1
-                logging.error('commons.Utils.start_spider all site %s slave spider run failed' % ','.join(sites))
-                result['error_info'] = 'all site %s slave spider run failed' % ','.join(sites)
+                logging.error('commons.Utils.start_spider all site %s subordinate spider run failed' % ','.join(sites))
+                result['error_info'] = 'all site %s subordinate spider run failed' % ','.join(sites)
                 return
             retcode = 1
         except Exception as e:
@@ -183,7 +183,7 @@ class Spiders(object):
             return result
 
     @classmethod
-    def stop_master_spider(cls, params):
+    def stop_main_spider(cls, params):
         try:
             retcode = -1
             result = {'code':retcode}
@@ -198,53 +198,53 @@ class Spiders(object):
             runing_task = TaskInfo()
             runing_task.id = task_id
             runing_res = RedisUtils.model_query(runing_task)
-            master_ip = eval(runing_res.get('master_ip'))
-            master_job = eval(runing_res.get('master_job'))
+            main_ip = eval(runing_res.get('main_ip'))
+            main_job = eval(runing_res.get('main_job'))
 
-            if len(master_ip) == 0 or len(master_job) == 0:
-                result['error_info'] = 'master_ip:%s, master_job:%s  error!' % (master_ip, master_job)
-                logging.error('commons.Utils.stop_master_spider master_ip:%s, master_job:%s  error!' % (master_ip, master_job))
+            if len(main_ip) == 0 or len(main_job) == 0:
+                result['error_info'] = 'main_ip:%s, main_job:%s  error!' % (main_ip, main_job)
+                logging.error('commons.Utils.stop_main_spider main_ip:%s, main_job:%s  error!' % (main_ip, main_job))
                 return
 
             success = True
             ## 停止所有的ip->job配对
-            for m_ip in master_ip:
-                for m_job in master_job:
+            for m_ip in main_ip:
+                for m_job in main_job:
                     url = 'http://%s:%s/cancel.json' % (m_ip, port)
                     data = {'project':project, 'job':m_job}
 
                     ## 通过scrapyd提供的接口停止spider
                     ret = Utils.post(url, data)
-                    logging.info('commons.Utils.stop_master_spider task:%s, ip:%s, job:%s, result:%s' % (task_id, m_ip, m_job, ret))
+                    logging.info('commons.Utils.stop_main_spider task:%s, ip:%s, job:%s, result:%s' % (task_id, m_ip, m_job, ret))
                     if not ret or ret['code'] == -1:
-                        logging.info('commons.Utils.stop_master_spider task:%s, ip:%s, job:%s failed' % (task_id, m_ip, m_job))
+                        logging.info('commons.Utils.stop_main_spider task:%s, ip:%s, job:%s failed' % (task_id, m_ip, m_job))
                         success = False
                         continue
                     else:
                         ## spider运行失败
                         if ret['result']['status'] != 'ok':
-                            logging.error('commons.Utils.stop_master_spider task:%s runing spider failed result:%s' % (task_id, ret['result']))
+                            logging.error('commons.Utils.stop_main_spider task:%s runing spider failed result:%s' % (task_id, ret['result']))
                             success = False
                             continue
-                        logging.info('commons.Utils.stop_master_spider task:%s, ip:%s, job:%s success' % (task_id, m_ip, m_job))
+                        logging.info('commons.Utils.stop_main_spider task:%s, ip:%s, job:%s success' % (task_id, m_ip, m_job))
 
             if not success:
                 retcode = -1
-                result['error_info'] = 'stop_master_spider error'
-                logging.error('commons.Utils.stop_master_spider %s failed' % (params))
+                result['error_info'] = 'stop_main_spider error'
+                logging.error('commons.Utils.stop_main_spider %s failed' % (params))
                 return
 
             retcode = 1
         except Exception as e:
             result['error_info'] = str(sys.exc_info()[1])
-            logging.error('commons.Utils.stop_master_spider exception has occur:%s' % str(sys.exc_info()[1]))
+            logging.error('commons.Utils.stop_main_spider exception has occur:%s' % str(sys.exc_info()[1]))
         finally:
             result['code'] = retcode
-            logging.info('commons.Utils.stop_master_spider params:%s result:%s' % (params, result))
+            logging.info('commons.Utils.stop_main_spider params:%s result:%s' % (params, result))
             return result
 
     @classmethod
-    def stop_slave_spider(cls, params):
+    def stop_subordinate_spider(cls, params):
         try:
             retcode = -1
             result = {'code':retcode}
@@ -259,49 +259,49 @@ class Spiders(object):
             runing_task = TaskInfo()
             runing_task.id = task_id
             runing_res = RedisUtils.model_query(runing_task)
-            slave_ip = eval(runing_res.get('slave_ip'))
-            slave_job = eval(runing_res.get('slave_job'))
+            subordinate_ip = eval(runing_res.get('subordinate_ip'))
+            subordinate_job = eval(runing_res.get('subordinate_job'))
 
-            if len(slave_ip) == 0 or len(slave_job) == 0:
-                result['error_info'] = 'slave_ip:%s, slave_job:%s  error!' % (slave_ip, slave_job)
-                logging.error('commons.Utils.stop_slave_spider slave_ip:%s, slave_job:%s  error!' % (slave_ip, slave_job))
+            if len(subordinate_ip) == 0 or len(subordinate_job) == 0:
+                result['error_info'] = 'subordinate_ip:%s, subordinate_job:%s  error!' % (subordinate_ip, subordinate_job)
+                logging.error('commons.Utils.stop_subordinate_spider subordinate_ip:%s, subordinate_job:%s  error!' % (subordinate_ip, subordinate_job))
                 return
 
             success = True
             ## 停止所有的ip->job配对
-            for s_ip in slave_ip:
-                for s_job in slave_job:
+            for s_ip in subordinate_ip:
+                for s_job in subordinate_job:
                     url = 'http://%s:%s/cancel.json' % (s_ip, port)
                     data = {'project':project, 'job':s_job}
 
                     ## 通过scrapyd提供的接口停止spider
                     ret = Utils.post(url, data)
-                    logging.info('commons.Utils.stop_slave_spider task:%s, ip:%s, job:%s, result:%s' % (task_id, s_ip, s_job, ret))
+                    logging.info('commons.Utils.stop_subordinate_spider task:%s, ip:%s, job:%s, result:%s' % (task_id, s_ip, s_job, ret))
                     if ret['code'] == -1:
-                        logging.info('commons.Utils.stop_slave_spider task:%s, ip:%s, job:%s failed' % (task_id, s_ip, s_job))
+                        logging.info('commons.Utils.stop_subordinate_spider task:%s, ip:%s, job:%s failed' % (task_id, s_ip, s_job))
                         success = False
                         continue
                     else:
                         ## spider运行失败
                         if ret['result']['status'] != 'ok':
-                            logging.error('commons.Utils.stop_slave_spider task:%s runing spider failed result:%s' % (task_id, ret['result']))
+                            logging.error('commons.Utils.stop_subordinate_spider task:%s runing spider failed result:%s' % (task_id, ret['result']))
                             success = False
                             continue
-                        logging.info('commons.Utils.stop_slave_spider task:%s, ip:%s, job:%s success' % (task_id, s_ip, s_job))
+                        logging.info('commons.Utils.stop_subordinate_spider task:%s, ip:%s, job:%s success' % (task_id, s_ip, s_job))
 
             if not success:
                 retcode = -1
-                result['error_info'] = 'stop_slave_spider error'
-                logging.error('commons.Utils.stop_slave_spider %s failed' % (params))
+                result['error_info'] = 'stop_subordinate_spider error'
+                logging.error('commons.Utils.stop_subordinate_spider %s failed' % (params))
                 return
 
             retcode = 1
         except Exception as e:
             result['error_info'] = str(sys.exc_info()[1])
-            logging.error('commons.Utils.stop_slave_spider exception has occur:%s' % str(sys.exc_info()[1]))
+            logging.error('commons.Utils.stop_subordinate_spider exception has occur:%s' % str(sys.exc_info()[1]))
         finally:
             result['code'] = retcode
-            logging.info('commons.Utils.stop_slave_spider params:%s result:%s' % (params, result))
+            logging.info('commons.Utils.stop_subordinate_spider params:%s result:%s' % (params, result))
             return result
 
     @classmethod
@@ -314,7 +314,7 @@ class Spiders(object):
             sites = params.get('sites', ['Twitter'])
 
             for site in sites:
-                delete_key = '%sMasterSpider:%s' % (site, task_id)
+                delete_key = '%sMainSpider:%s' % (site, task_id)
                 if not RedisUtils.common_delete(delete_key):
                     result['error_info'] = 'clean_spider_queue task_id:%s  delete failed' % task_id
                     logging.error('commons.Utils.clean_spider_queue task_id:%s  delete failed' % task_id)
@@ -322,10 +322,10 @@ class Spiders(object):
             retcode = 1
         except Exception as e:
             result['error_info'] = str(sys.exc_info()[1])
-            logging.error('commons.Utils.stop_slave_spider exception has occur:%s' % str(sys.exc_info()[1]))
+            logging.error('commons.Utils.stop_subordinate_spider exception has occur:%s' % str(sys.exc_info()[1]))
         finally:
             result['code'] = retcode
-            logging.info('commons.Utils.stop_slave_spider params:%s result:%s' % (params, result))
+            logging.info('commons.Utils.stop_subordinate_spider params:%s result:%s' % (params, result))
             return result
 
 if __name__ == '__main__':
