@@ -15,7 +15,7 @@ hyperlink==17.3.1
 idna==2.6
 incremental==17.5.0
 ipaddress==1.0.18
-lxml==3.8.0
+lxml==4.6.5
 olefile==0.44
 paramiko==2.3.1
 parsel==1.2.0
